@@ -8,22 +8,23 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
        <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
+       <link rel="stylesheet" href="css/ihover.css" >
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-
+<div class="row">
 <header class="navbar-fixed navMenu">	
 <nav class="">
     <div class="nav-wrapper menuCabecera">
-      <a href="#!" class="brand-logo"><img class="activator  responsive-img" src="imagenes/logo.png" width="100px" height="100px" ></a>
+      <a href="#!" class="brand-logo">LOGO</a>
 
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Conocenos</a></li>
         <li><a href="#">Plan Hogar</a></li>
         <li><a href="#">Plan Corporativo</a></li>
-             <li><a href="#menu4">Dirección</a></li>
+        <li><a href="#menu4">Dirección</a></li>
         <li><a href="#modal1">Contáctenos</a></li>
    
       </ul>
@@ -38,14 +39,14 @@
     
   </nav>
 </header>
-
+<!-- 
 <section class="contenedorSlider">
 <div class="slider">
     <ul class="slides" id="particles-js">
 
       <li>
       
-        <img src="imagenes/baner1.jpg"  style="opacity: 0.5;"> <!-- random image --> 
+        <img src="imagenes/baner1.jpg"  style="opacity: 0.5;"> 
         <div class="caption center-align">
           <h3>Menu 1</h3>
           <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
@@ -53,21 +54,21 @@
        
       </li>
       <li>
-        <img src="imagenes/baner1.jpg" style="opacity: 0.5;"> <!-- random image -->
+        <img src="imagenes/baner1.jpg" style="opacity: 0.5;">
         <div class="caption left-align">
           <h3>Menu 1</h3>
           <h5 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
         </div>
       </li>
       <li>
-        <img src="imagenes/baner1.jpg" style="opacity: 0.5;"> <!-- random image -->
+        <img src="imagenes/baner1.jpg" style="opacity: 0.5;"> 
         <div class="caption right-align">
           <h3>Menu 1</h3>
           <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
         </div>
       </li>
       <li>
-        <img src="imagenes/baner1.jpg" style="opacity: 0.5;"> <!-- random image -->
+        <img src="imagenes/baner1.jpg" style="opacity: 0.5;"> 
         <div class="caption center-align">
           <h3>Menu 1</h3>
           <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
@@ -77,29 +78,44 @@
     </ul>
   
     </div>
+</section> -->
+
+
+<section class="row">
+  <div class="banerPortada" style="position: relative;">
+   <img src="imagenes/baner1.jpg" width="100%" height="880px">
+    <div  id="particles-js"  style="position: absolute;  left: 10px; top: 30px; z-index: 1; width: 100%;height: 880px;"> 
+      
+    </div>   
+  </div>
 </section>
 
+<section class="banerPortada  row">
+<center  style="margin-top:80px; margin-bottom: 50px;"><h3>Nuestros Servicios</h3></center>
+  <div class="col s12 m2 l2">
 
-<section class="menu1 row">
-<h3>Conocenos</h3>
-<div class="col s12 m2 l2">
-  
+  </div>
 
 
-</div>
 
- <div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">¿Quiénes somos?<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">¿Quiénes somos?<i class="material-icons right">close</i></span>
+
+ <div class="men1  col s12 m12 l2">
+ <div class="ih-item circle effect5"><a href="#santarosa" data-toggle="modal">
+        <div class="img"><img src="Imagenes/baner1.jpg" class="responsive-img" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Plan Hogar</h3>
+            <p>Click para ver la galeria</p>
+          </div>
+        </div></a>
+        </div>
+        <h2>Plan Hogar</h2>
       <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
-    </div>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+ 
   </div>
+
+
   
 
 <div class="col s12 m12 l1">
@@ -110,17 +126,20 @@
 
 
 
-<div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">¿Qué nos diferencia?<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">¿Qué nos diferencia?<i class="material-icons right">close</i></span>
-      <p>Compartimos tu pasión por internet por ello traemos a tu domicilio, una avanzada tecnología que nos permite ofrecerte la experiencia Online que tanto esperabas. Nuestro enfoque en el cliente hace que nos esforcemos día a día por llevarte un servicio de primer nivel.</p>
-    </div>
+<div class="men1  col s12 m12 l2">
+ <div class="ih-item circle effect11"><a href="#santarosa" data-toggle="modal">
+        <div class="img"><img src="Imagenes/baner1.jpg" class="responsive-img" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Plan Hogar</h3>
+            <p>Click para ver la galeria</p>
+          </div>
+        </div></a>
+        </div>
+        <h2>Plan Hogar</h2>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+ 
   </div>
 
 <div class="col s12 m12 l1">
@@ -131,17 +150,157 @@
 
 
 
-<div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
+<div class="men1  col s12 m12 l2">
+ <div class="ih-item circle effect15"><a href="#santarosa" data-toggle="modal">
+        <div class="img"><img src="Imagenes/baner1.jpg" class="responsive-img" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Plan Hogar</h3>
+            <p>Click para ver la galeria</p>
+          </div>
+        </div></a>
+        </div>
+        <h2>Plan Hogar</h2>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+ 
+  </div>
+
+<div class="col s12 m12 l2">
+  
+
+
+</div>
+</section>
+
+
+
+<section class="row">
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Conocenos</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Conocenos</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Conocenos</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Conocenos</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+<section class="banerPortada row">
+  
+  <div class="row">
+    <div class="col s12 m4 l2"><p></p></div>
+    <div class="col s12 m4 l8">
+      
+      <center  style="margin-top:80px; margin-bottom: 50px;"><h3>Conocenos</h3></center>
+<p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.
+LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+
+
     </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">¿Por qué elegirnos?<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">¿Por qué elegirnos?<i class="material-icons right">close</i></span>
-      <p>Porque somos expertos en Internet y por lo tanto contamos con la infraestructura y el personal técnico necesarios para darte la mejor solución de comunicaciones, de una manera personalizada, rápida y económicamente accesible para brindarte el servicio que necesitas.</p>
-    </div>
+    <div class="col s12 m4 l2"><p></p></div>
+  </div>
+
+
+
+  <div class="col s12 m2 l2">
+
+  </div>
+
+
+
+
+ <div class="men1  col s12 m12 l2">
+ <div class="ih-item circle effect5"><a href="#santarosa" data-toggle="modal">
+        <div class="img"><img src="Imagenes/baner1.jpg" class="responsive-img" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Plan Hogar</h3>
+            <p>Click para ver la galeria</p>
+          </div>
+        </div></a>
+        </div>
+        <h2>Plan Hogar</h2>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+ 
+  </div>
+
+
+  
+
+<div class="col s12 m12 l1">
+  
+
+
+</div>
+
+
+
+<div class="men1  col s12 m12 l2">
+ <div class="ih-item circle effect11"><a href="#santarosa" data-toggle="modal">
+        <div class="img"><img src="Imagenes/baner1.jpg" class="responsive-img" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Plan Hogar</h3>
+            <p>Click para ver la galeria</p>
+          </div>
+        </div></a>
+        </div>
+        <h2>Plan Hogar</h2>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+ 
+  </div>
+
+<div class="col s12 m12 l1">
+  
+
+
+</div>
+
+
+
+<div class="men1  col s12 m12 l2">
+ <div class="ih-item circle effect15"><a href="#santarosa" data-toggle="modal">
+        <div class="img"><img src="Imagenes/baner1.jpg" class="responsive-img" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Plan Hogar</h3>
+            <p>Click para ver la galeria</p>
+          </div>
+        </div></a>
+        </div>
+        <h2>Plan Hogar</h2>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
+ 
   </div>
 
 <div class="col s12 m12 l2">
@@ -153,159 +312,46 @@
 </section>
 
 
-
-
-
-
-
-<section class="menu2 row">
-<h3>Plan Hogar</h3>
-<div class="col s12 m12 l2">
-</div>
-
- <div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">PLAN ECONÓMICO<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">PLAN ECONÓMICO<i class="material-icons right">close</i></span>
-      <p>Hasta 1 y 2 Megas de velocidad</p>
-
-<p>Descargas Ilimitadas Hasta Para estar al día con las noticias, leer y enviar correos, chatear con tus amigos y mantenerte en línea.</p>
-
-<p>Precio S/.50.00</p>
-    </div>
+<section class="row">
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Ubicacion</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Ubicacion</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Ubicacion</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Ubicacion</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
   </div>
-  
-
-<div class="col s12 m12 l1">
-  
-
-
-</div>
-
-
-
-<div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">¿Qué nos diferencia?<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">¿Qué nos diferencia?<i class="material-icons right">close</i></span>
-      <p>Compartimos tu pasión por internet por ello traemos a tu domicilio, una avanzada tecnología que nos permite ofrecerte la experiencia Online que tanto esperabas. Nuestro enfoque en el cliente hace que nos esforcemos día a día por llevarte un servicio de primer nivel.</p>
-    </div>
-  </div>
-
-<div class="col s12 m12 l1">
-  
-
-
-</div>
-
-
-
-<div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">¿Por qué elegirnos?<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">¿Por qué elegirnos?<i class="material-icons right">close</i></span>
-      <p>Porque somos expertos en Internet y por lo tanto contamos con la infraestructura y el personal técnico necesarios para darte la mejor solución de comunicaciones, de una manera personalizada, rápida y económicamente accesible para brindarte el servicio que necesitas.</p>
-    </div>
-  </div>
-
-<div class="col s12 m12 l2">
-  
-
-
-</div>
-
 </section>
 
-<section class="menu3 row">
-<h3>Plan Corporativo</h3>
-<div class="col s12 m12 l2">
-</div>
-
- <div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">PLAN ECONÓMICO<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">PLAN ECONÓMICO<i class="material-icons right">close</i></span>
-      <p>Hasta 1 y 2 Megas de velocidad</p>
-
-<p>Descargas Ilimitadas Hasta Para estar al día con las noticias, leer y enviar correos, chatear con tus amigos y mantenerte en línea.</p>
-
-<p>Precio 50.00</p>
-    </div>
-  </div>
-  
-
-<div class="col s12 m12 l1">
-  
-
-
-</div>
 
 
 
-<div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">¿Qué nos diferencia?<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">¿Qué nos diferencia?<i class="material-icons right">close</i></span>
-      <p>Compartimos tu pasión por internet por ello traemos a tu domicilio, una avanzada tecnología que nos permite ofrecerte la experiencia Online que tanto esperabas. Nuestro enfoque en el cliente hace que nos esforcemos día a día por llevarte un servicio de primer nivel.</p>
-    </div>
-  </div>
-
-<div class="col s12 m12 l1">
-  
-
-
-</div>
-
-
-
-<div class="men1 card col s12 m12 l2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator circle responsive-img" src="imagenes/baner1.jpg" width="50px" height="100x" >
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">¿Por qué elegirnos?<i class="material-icons right">more_vert</i></span>    
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">¿Por qué elegirnos?<i class="material-icons right">close</i></span>
-      <p>Porque somos expertos en Internet y por lo tanto contamos con la infraestructura y el personal técnico necesarios para darte la mejor solución de comunicaciones, de una manera personalizada, rápida y económicamente accesible para brindarte el servicio que necesitas.</p>
-    </div>
-  </div>
-
-<div class="col s12 m12 l2">
-  
-
-
-</div>
-
-</section>
-
-<section class="menu4 row">
-<h3>Ubicación</h3>
+<section class=" menu4 row">
+ <center  style="margin-top:80px; margin-bottom: 50px;"><h3>Dirección</h3></center>
 <div class="col s12 m12 l2">
   
 
@@ -456,6 +502,10 @@
             </div>
           </div>
  </footer>
+
+
+
+ 
             
 
  <!--Import jQuery before materialize.js-->
@@ -504,6 +554,6 @@ $(document).ready(function(){
   // };
   // requestAnimationFrame(update);
 </script>
-
+</div>
 </body>
 </html>

@@ -2864,6 +2864,9 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   background-color: #ee6e73;
+
+  width: 100%;
+ position: absolute;
 }
 
 .page-footer .footer-copyright {
@@ -4247,6 +4250,9 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
   white-space: nowrap;
+
+  
+
 }
 
 nav .brand-logo.center {
@@ -4314,8 +4320,6 @@ nav ul a {
   display: block;
   padding: 0 15px;
   cursor: pointer;
-
-  margin-top: 16px;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -4330,10 +4334,10 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
 }
 
 nav ul a:hover {
-  background-color: rgba(26,35, 126, 0.5);
+  background-color: rgba(0, 0, 0, 0);;
 
-
-border: 1px solid #ffffff;
+  color: rgba(223, 143, 4, 1);
+  border-bottom-style: solid;
 
 }
 
@@ -7933,13 +7937,14 @@ input[type=range]:focus::-ms-fill-upper {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0;
+ /* margin: 0;*/
+  opacity: 0;
 }
 
 .slider .indicators .indicator-item {
   display: inline-block;
   position: relative;
-  cursor: pointer;
+  
   height: 16px;
   width: 16px;
   margin: 0 12px;
