@@ -1,0 +1,68 @@
+body{
+
+background-color:#fafafa;
+background-color:black;
+}
+
+.menuCabecera{
+	background-color: #1a237e;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 160%;
+
+}
+
+
+
+.slider {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-top: 38px;
+}
+
+.menu1{
+	background-color: #395ca3;
+	margin-top: 30px;
+	height: auto;
+	width: 100%;
+	padding-bottom: 15px;
+	padding: 10px;
+
+}
+
+
+.menu2{
+	background-color:#395ca3;
+	margin-top: 30px;
+	height: auto;
+	width: 100%;
+	padding: 10px;
+
+}
+
+.menu3{
+	background-color:#395ca3;
+	margin-top: 30px;
+	height: auto;
+	width: 100%;
+	padding: 10px;
+
+}
+
+.menu4{
+	background-color:#395ca3;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: auto;
+	width: 100%;
+	padding: 10px;
+
+}
+
+.page-footer{
+	background-color: #1a237e;
+}
+
