@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Level Net</title>
+	<title>FiberLite</title>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,7 +17,7 @@
 <header class="navbar-fixed navMenu">	
 <nav class="">
     <div class="nav-wrapper menuCabecera">
-      <a href="#page-top" class="brand-logo">LOGO</a>
+      <a href="#page-top" class="brand-logo page-scroll">FiberLite</a>
 
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -28,10 +28,9 @@
    
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Conocenos</a></li>
-        <li><a href="#">Plan Hogar</a></li>
-        <li><a href="#">Plan Corporativo</a></li>
-        <li><a href="#menu4">Dirección</a></li>
+        <li><a class="page-scroll" href="#servicios">Servicios</a></li>
+        <li><a class="page-scroll" href="#conocenos">Conocenos</a></li>
+        <li><a class="page-scroll" href="#direccion">Direccion</a></li>
         <li><a href="#modal1">Contáctenos</a></li>
       </ul>
     </div>
@@ -388,63 +387,75 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
       <h4>Enviénos un mensaje</h4>
 
   <div class="row">
-    <form class="col s12">
+    <form id="#contact-form" class="col s12">
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
+          <input id="icon_prefix name" type="text" class="validate">
           <label for="icon_prefix">Nombres y Apellidos</label>
         </div>
         
       </div>
-    </form>
-  </div>
 
-  <div class="row">
-    <form class="col s12">
+<div class="row">
+   
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_prefix" type="text" class="validate">
+          <input id="icon_prefix phone" type="text" class="validate">
           <label for="icon_prefix">Celular</label>
         </div>
         
       </div>
-    </form>
+    
   </div>
 
 <div class="row">
-    <form class="col s12">
+   
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">email</i>
-          <input id="icon_prefix" type="text" class="validate">
+          <input id="icon_prefix email" type="text" class="validate">
           <label for="icon_prefix">Email</label>
         </div>
         
       </div>
-    </form>
+   
   </div>
-
-
-
   <div class="row">
-    <form class="col s12">
+  
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <textarea id="icon_prefix2 mensaje" class="materialize-textarea"></textarea>
           <label for="icon_prefix2">Mensaje:</label>
         </div>
       </div>
-    </form>
+
   </div>
 
+  <div class="modal-footer">
+      <a href="#!" id="" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
-    </div>
+
+
+          <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
+            Enviar
+          </button>
+
+  
+    </form>
+     </div>
   </div>
+</div>
+  
+
+
+
+
+
+
+ 
 
 
 
@@ -454,9 +465,9 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
   <div id="modal2" class="modal bottom-sheet">
     <div class="modal-content">
     <center>
-       <h3>WhatsApp</h3>
-      <h4>Agreganos y realiza todas tus consultas o sugerencia de manera directa.</h4>
-      <h4>999999999</h4> 
+       <h5>WhatsApp</h5>
+      <h6>Agreganos y realiza todas tus consultas o sugerencia de manera directa.</h6>
+      <h6>999999999</h6> 
     </center>
      
     </div>
@@ -496,7 +507,7 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
           <div class="footer-copyright">
             <div class="container">
             © 2017 Todos los derechos reservados.
-            <a class="grey-text text-lighten-4 right" href="#!">Página elaborada por TODS</a>
+            <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/diego.tafurobregon" target="_blank">Página elaborada por TODS</a>
             </div>
           </div>
  </footer>
@@ -514,6 +525,7 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
       <script type="text/javascript" src="js/particles.js"></script>
 	    <script type="text/javascript" src="js/particulas.js"></script>
       <script src="js/scrolling-nav.js"></script>
+      <script type="text/javascript" src="js/correo.js"></script>
 
       <script src="js/app.js"></script>
       <!-- stats.js -->
