@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AirClound</title>
-	<meta charset="utf-8">
-<!--Import Google Icon Font-->
-     <!--  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+<title></title>
+ <!--Import Google Icon Font-->
+     <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-       <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
-       <link rel="stylesheet" href="css/ihover.css" >
+      <link type="text/css" rel="stylesheet" href="css/estiloPrincipal.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/ihover.css" >
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 </head>
 <body id="page-top">
-<div class="row">
-<header class="navbar-fixed navMenu z-depth-4">	
-<nav class="">
-    <div class="nav-wrapper menuCabecera">
+<header class="navbar-fixed navMenu z-depth-4">
+<nav class="nav-extended">
+    <div class="nav-wrapper">
       <a href="#page-top" class="brand-logo page-scroll">AirClound</a>
-
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Servicios<i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i></a></li>
         <!-- <li><a class="page-scroll" href="#servicios"><i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i>Servicios</a></li>    -->    
         <li><a class="page-scroll" href="#conocenos"><i class="material-icons left"><img src="iconos/ic_visibility1x.png"></i>Conocenos </a></li>
         <li><a class="page-scroll" href="#direccion"><i class="material-icons left"><img src="iconos/ic_room1x.png"></i>Direccion</a></li>
         <li><a class="page-scroll" href="#modal1"><i class="material-icons left"><img src="iconos/ic_perm_phone_msg1x.png"></i>Contáctenos</a></li>
-   
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a class="page-scroll" href="#servicios">Servicios</a></li>
@@ -35,124 +33,95 @@
         <li><a href="#modal1">Contáctenos</a></li>
       </ul>
     </div>
-    
   </nav>
-  <ul id="dropdown1" class="dropdown-content" style="margin-top: 66px;">
-  <li><a href="#!">Plan Hogar</a></li>
-  <li><a href="#!">Plan Empresarial</a></li>
+  <ul id="dropdown1" class="dropdown-content" style="margin-top: 64px;">
+  <li><a class="page-scroll" href="#Planes">Planes</a></li>
+  <li><a class="page-scroll" href="#direccion">¿Donde adquirirlos?</a></li>
+  <li><a href="#modalPago">Pago de servicios</a></li>
+   <li><a href="#!">Requisitos</a></li>
+    <li><a href="#!">Cobertura</a></li>
   <!-- <li class="divider"></li>
   <li><a href="#!">Productos</a></li> -->
-</ul>
 </header>
-<!-- 
-<section class="contenedorSlider">
-<div class="slider">
-    <ul class="slides" id="particles-js">
 
-      <li>
-      
-        <img src="imagenes/baner1.jpg"  style="opacity: 0.5;"> 
-        <div class="caption center-align">
-          <h3>Menu 1</h3>
-          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-        </div>
-       
-      </li>
-      <li>
-        <img src="imagenes/baner1.jpg" style="opacity: 0.5;">
-        <div class="caption left-align">
-          <h3>Menu 1</h3>
-          <h5 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/baner1.jpg" style="opacity: 0.5;"> 
-        <div class="caption right-align">
-          <h3>Menu 1</h3>
-          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/baner1.jpg" style="opacity: 0.5;"> 
-        <div class="caption center-align">
-          <h3>Menu 1</h3>
-          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-        </div>
-      </li>
+<div class="container" style="width: 100%;background-color:;">
+        <!-- Aqui va toda la pagina -->
+<div class="row" style="background-color:;margin:0;padding: 0;">
+<!-- Aqui va la zona de particulas -->   
+ <div class="col s12 m12 l12" style="margin:0;padding: 0;position: relative;">
+   <img src="imagenes/banerParticula.jpg" class="responsive-img" width="100%" height="100%x">
 
-    </ul>
-  
-    </div>
-</section> -->
-
-
-<section class="row">
-  <div class="banerPortada" style="position: relative;">
-   <img src="imagenes/baner1.png" width="100%" height="880px">
-    <div  id="particles-js"  style="position: absolute;  left: 10px; top: 30px; z-index: 1; width: 100%;height: 880px;"> 
-      <div style="color: #fff;position: absolute;z-index: 2;margin-top: 10%;margin-left: 20%;">
-        <span><h2>AirClound Empresas</h2> </span>
-        <span><h2  style="margin-left: 10 %;">& </h2> </span>
-        <span><h2>Lan Center</h2> </span>
-      </div>
-    </div>   
-  </div>
-</section>
-
-<section id="servicios" class="banerPortada  row" style="background-color: #EFFFFF; color: #004060;">
-
- 
-
- <div class="row">
-    <div class="col s12 m4 l2">
-      
-    </div>
-    <div class="col s12 m4 l8" style="background-color: #F0F5F5; height: 200px;">
-      
-      
-      <img src="imagenes/tituloServicio.png"  width="100%" height="200px" alt="img">
-    </div>
-    <div class="col s12 m4 l2">
-      
-
-    </div>
-  </div>
-
-
-  <div class="col s12 m2 l2">
-
-  </div>
-
- <div class="men1  col s12 m12 l2" style="padding-top: 10px;box-shadow: 1px 1px 1px 3px rgba(0,0,0,0.2);border-radius: 0px 27px 0px 27px; background-color: #FA5300; color: #fff;" >
- <center>
-   <div class="ih-item circle effect5"><a href="#modalHogar" data-toggle="modal">
-        <div class="img"><img src="imagenes/hogar1.jpg" class="responsive-img" alt="img"></div>
-        <div class="info">
-          <div class="info-back">
-            <h3>Plan Hogar</h3>
-           <p>Ver más</p>
+<div  class="col s7 push-s5" id="particles-js"  style="position: absolute;  left: 10px; top: 30px; z-index: 1; width: 100%;height: 100%;"> 
+          <div style="color: #fff;position: absolute;z-index: 2;margin-top: 3%;margin-left: 15%;">
+          <span><h4>Conexion dedicada</h4> </span>
+          <span><h4  style="margin-left: 10 %;">100% fibra optica</h4> </span>
+          
           </div>
-        </div></a>
-        </div>
+</div>   
+ </div>
+</div>
+ <!-- Aqui termina la zona de particulas -->
+<!-- Aqui va la seccion de planes -->   
 
- </center>
- 
-        <h4>Plan Hogar.</h4>
+<!-- Aqui empeiza plan hogar -->   
+<div id="Planes" class="row" style="background-color:;margin:0;padding: 0; margin-bottom: 15px;padding-bottom: 20px;">
+<div class="col s12 m12 l12">
+ <center><h3>Planes</h3></center> 
+</div>
+<div class="col s12 m12 l2">
+  <!--esto es margen de las columnas-->
+</div>
+
+  <div class="card col s12 m12 l2" style="margin-top: 30px;">
+
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="imagenes/hogar1.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Plan hogar<i class="material-icons right">more_vert</i></span>
+      <p><a href="#modal1">Adquieralo aqui!!</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Plan Hogar<i class="material-icons right">close</i></span>
       <p>
       Excelentes velocidades de subida y descarga. Para ver películas en línea, descargar música, fotos, todos los archivos que quieras y jugar en línea con la conexión más estable.
       </p>
       <p>
       Tendrás una gratificante experiencia de navegación, incluso cuando toda tu familia se conecta al mismo tiempo en diferentes dispositivos.
       </p>
- 
+    </div>
   </div>
 
+<div class="col s12 m12 l6">
+ <div class="carousel carousel-slider" data-indicators="true" style="margin-top: 30px;">
+  <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">Adquierelo aqui!!</a>
+    </div>
+    <a class="carousel-item" href="#one!"><img src="imagenes/planhogar1.png" width="800px" height="400px"></a>
+    <a class="carousel-item" href="#two!"><img src="imagenes/planhogar2.png" width="800px" height="400px"></a>
+    <a class="carousel-item" href="#three!"><img src="imagenes/planhogar1.png" width="800px" height="400px"></a>
+    <a class="carousel-item" href="#four!"><img src="imagenes/planhogar2.png" width="800px" height="400px"></a>
+  </div>
 
-  
+</div>
+<div class="col s12 m12 l2">
+  <!--esto es margen de las columnas-->
+</div>
+</div>
+<!-- Aqui termina plan hogar -->   
+
+<!-- Aqui empeiza plan empresas -->   
+<div class="row" style="background-color: ;margin:0;padding: 0; margin-bottom: 15px;padding-bottom: 20px;">
+
+<div class="col s12 m12 l2">
+  <!--esto es margen de las columnas-->
+</div>
 
 <div class="col s12 m12 l6">
-  
-<div class="carousel carousel-slider" style="margin-top: 30px;">
+ <div class="carousel carousel-slider" data-indicators="true" style="margin-top: 30px;">
+  <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">Adquierelo aqui!!</a>
+    </div>
     <a class="carousel-item" href="#one!"><img src="imagenes/planhogar1.png" width="800px" height="400px"></a>
     <a class="carousel-item" href="#two!"><img src="imagenes/planhogar2.png" width="800px" height="400px"></a>
     <a class="carousel-item" href="#three!"><img src="imagenes/planhogar1.png" width="800px" height="400px"></a>
@@ -161,26 +130,37 @@
 
 </div>
 
+  <div class="card col s12 m12 l2" style="margin-top: 30px;">
 
-
-
-
-
-
-
-
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="imagenes/empresa1.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Plan Empresas<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">Adquieralo aqui!!</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Plan Empresas<i class="material-icons right">close</i></span>
+      <p>
+      Excelentes velocidades de subida y descarga. Para ver películas en línea, descargar música, fotos, todos los archivos que quieras y jugar en línea con la conexión más estable.
+      </p>
+      <p>
+      Tendrás una gratificante experiencia de navegación, incluso cuando toda tu familia se conecta al mismo tiempo en diferentes dispositivos.
+      </p>
+    </div>
+  </div>
 
 <div class="col s12 m12 l2">
-  
-
-
+  <!--esto es margen de las columnas-->
 </div>
-</section>
+</div>
+<!-- Aqui termina plan empresas -->   
+<!-- Aqui termina la seccion de planes -->  
 
-
-
-<section class="row">
-<div class="slider">
+<!-- Aqui empieza la seccion de conocenos -->  
+<div id="conocenos" class="row">
+<div class="section"> 
+  <div class="slider">
     <ul class="slides">
       <li>
         <img src="imagenes/conocenos1.jpg" class="responsive-img"> <!-- random image -->
@@ -212,161 +192,80 @@
       </li>
     </ul>
   </div>
-</section>
-
-
-
-<section id="conocenos" class="banerPortada row">
-  
-  <div class="row">
-    <div class="col s12 m4 l2">
-      
-    </div>
-    <div class="col s12 m4 l8">
-      
-      <center  style="margin-top:80px; margin-bottom: 50px;"><h3>Conocenos</h3></center>
-<p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.
-LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
-
-
-    </div>
-    <div class="col s12 m4 l2"></div>
-  </div>
-
-
-
-  <div class="col s12 m2 l2">
-
-  </div>
-
-
-
-
- <div class="men1  col s12 m12 l2">
- <div class="ih-item square colored effect14 left_to_right"><a href="#">
-        <div class="img"><img src="imagenes/baner1.jpg" alt="img"></div>
-        <div class="info">
-          <h3>Conocenos</h3>
-          <p>Para saber mas has click aqui.</p>
-        </div></a>
-        </div>
-        <h4>¿Nosotros?</h4>
-      <p>
-      ¿Qué nos diferencia?
-      </p>
-      <p>
-      Compartimos tu pasión por internet por ello traemos a tu domicilio, una avanzada tecnología que nos permite ofrecerte la experiencia Online que tanto esperabas. Nuestro enfoque en el cliente hace que nos esforcemos día a día por llevarte un servicio de primer nivel.
-      </p>
-
-      <p>
-      ¿Por qué elegirnos?
-      </p>
-      <p>
-      Porque somos expertos en Internet y por lo tanto contamos con la infraestructura y el personal técnico necesarios para darte la mejor solución de comunicaciones, de una manera personalizada, rápida y económicamente accesible para brindarte el servicio que necesitas.
-      </p>
- 
-  </div>
-
-
-  
-
-<div class="col s12 m12 l1">
-  
-
-
+</div>
+<div class="col s12 m12 l12">
+ <center><h3>CONOCENOS</h3></center> 
+</div>
+<div class="col s12 m12 l2">
+  <!--esto es margen de las columnas-->
 </div>
 
-
-
-<div class="men1  col s12 m12 l2">
-  <div class="ih-item square colored effect14 left_to_right"><a href="#">
-        <div class="img"><img src="imagenes/baner1.jpg" alt="img"></div>
-        <div class="info">
-          <h3>Conocenos</h3>
-          <p>Para saber mas has click aqui.</p>
-        </div></a>
-        </div>
-        <h4>Vision</h4>
-      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
-      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
- 
-  </div>
-
-<div class="col s12 m12 l1">
-  
-
-
+<div class="col s12 m12 l8">
+  <ul class="collapsible" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Nosotros</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">place</i>Mision</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+   <li>
+    <div class="collapsible-header"><i class="material-icons">place</i>Vision</div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+</ul>
 </div>
-
-
-
-<div class="men1  col s12 m12 l2">
- <div class="ih-item square colored effect14 left_to_right"><a href="#">
-        <div class="img"><img src="imagenes/baner1.jpg" alt="img"></div>
-        <div class="info">
-          <h3>Conocenos</h3>
-          <p>Para saber mas has click aqui.</p>
-        </div></a>
-        </div>
-        <h4>Mision</h4>
-      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
-      <p>LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
- 
-  </div>
 
 <div class="col s12 m12 l2">
-  
-
-
+  <!--esto es margen de las columnas-->
 </div>
+  
+</div>
+<!-- Aqui termina la seccion de conocenos --> 
 
-</section>
+<!-- Aqui empieza la seccion de direccion --> 
 
-
-<section class="row">
-<div class="slider">
+<div id="direccion" class="row">
+  <div class="section"> 
+  <div class="slider">
     <ul class="slides">
       <li>
-        <img src="imagenes/ubicacion1.jpg"  class="responsive-img"> <!-- random image -->
+        <img src="imagenes/ubicacion1.jpg" class="responsive-img"> <!-- random image -->
         <div class="caption center-align">
           <h3></h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          <h5 class="light grey-text text-lighten-3">Más cerca de usted.</h5>
         </div>
       </li>
-   <!--    <li>
-        <img src="http://lorempixel.com/580/250/nature/2"> 
+  <!--     <li>
+        <img src="imagenes/conocenos2.jpg" class="responsive-img"> 
         <div class="caption left-align">
-          <h3>Ubicacion</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3">Vision.</h5>
         </div>
-      </li> -->
-   <!--    <li>
-        <img src="http://lorempixel.com/580/250/nature/3"> 
+      </li>
+      <li>
+        <img src="imagenes/conocenos3.jpg" class="responsive-img"> 
         <div class="caption right-align">
-          <h3>Ubicacion</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3">Experiencia comprobada..</h5>
         </div>
-      </li> -->
- <!--      <li>
-        <img src="http://lorempixel.com/580/250/nature/4"> 
+      </li>
+      <li>
+        <img src="imagenes/conocenos4.jpg" class="responsive-img"> 
         <div class="caption center-align">
-          <h3>Ubicacion</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3">Soluciones adecuadas al cliente.</h5>
         </div>
       </li> -->
     </ul>
   </div>
-</section>
-
-
-
-
-<section id="direccion" class=" menu4 row">
- <center  style="margin-top:80px; margin-bottom: 50px;"><h3>Dirección</h3></center>
+</div>
+<div class="col s12 m12 l12">
+ <center><h3>DIRECCION</h3></center> 
+</div>
 <div class="col s12 m12 l2">
-  
-
-
+   <!--esto es margen de las columnas-->
 </div>
 
 <div class="col s12 m12 l5">
@@ -384,50 +283,52 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
 </div>
 
 <div class="col s12 m12 l2">
-  
-
-
+   <!--esto es margen de las columnas-->
+</div>
 </div>
 
-</section>
-
-<section id="prueba" class=" menu4 row" style="background-color: red;">
- <center  style="margin-top:80px; margin-bottom: 50px;"><h3>Dirección</h3></center>
-<div class="col s12 m12 l2">
-  
 
 
-</div>
+<!-- Aqui termina la seccion de direccion --> 
 
-<div class="col s12 m12 l8">
-  
 
-   <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
-    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
-    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
-    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
+
   </div>
+  <!--Pie de pagina-->
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Siguenos en:</h5>
+                 <ul>
+                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#!"><img class="activator  responsive-img" src="imagenes/facebook.png"></a></a></li>
+                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#!"><img class="activator  responsive-img" src="imagenes/twitter.png"></a></li>
+                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#!"><img class="activator  responsive-img" src="imagenes/youtube.png"></a></li>
+                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#modal2"><img  class="activator  responsive-img" src="imagenes/wasap.png"></a></li> 
+                </ul>          
+              </div>
+              <div class="col l4 offset-l2 s12">
+               <!--  <h5 class="white-text">Links</h5> -->
+                <ul>
+                 <li><a class="page-scroll" href="#servicios">Servicios</a></li>
+                 <li><a class="page-scroll" href="#conocenos">Conocenos</a></li>
+                 <li><a class="page-scroll" href="#direccion">Direccion</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#modal1">Contáctenos</a></li>                
+                </ul>            
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Todos los derechos reservados.
+            <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/diego.tafurobregon" target="_blank">Página elaborada por TODS</a>
+            </div>
+          </div>
+</footer>
 
+<!--Inicio Ventanas Modales-->
 
-</div>
-
-
-
-<div class="col s12 m12 l2">
-  
-
-
-</div>
-
-</section>
-
-
-
-<!-- Modal Trigger -->
- <!--  <a class="waves-effect waves-light btn" href="#modal1">Modal</a> -->
-
-  <!-- Modal Structure -->
+<!-- Modal Structure de contacto -->
   <div id="modal1" class="modal" style="background: rgba(0,255,255,1);
 background: -moz-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,255,255,1)), color-stop(100%, rgba(0,205,255,1)));
@@ -476,7 +377,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', end
    
   </div>
   <div class="row">
-  
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix"><img src="iconos/ic_mode_edit1x.png"></i>
@@ -484,31 +384,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', end
           <label for="icon_prefix2">Mensaje:</label>
         </div>
       </div>
-
   </div>
-
   <div class="modal-footer">
       <a href="#!" id="" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
     </div>
-
-
           <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
             Enviar
           </button>
-
-  
     </form>
      </div>
   </div>
 </div>
-  
 
 
 
 
 
-
- 
+  <!-- Modal Structure Pagos -->
+  <div id="modalPago" class="modal">
+    <div class="modal-content">
+      <h4>Pagos de Servicios</h4>
+      <p>Cuenta BCP</p>
+       <p>123131321321345646546</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+    </div>
+  </div>
 
 
 
@@ -526,178 +428,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', end
     </div>
   </div>
 
-<!-- Modal Hogar -->
-  <div id="modalHogar" class="modal" style="background-color: #fff; width: 800px;height: 400px">
-    <div class="modal-content">
-    
- 
-     
+<!--Fin Ventanas Modales-->
 
-   <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
-    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
-    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
-    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
-  </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+  
+<script type="text/javascript" src="js/estilos.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/particulas.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript" src="js/correo.js"></script>
 
-
-
-
-    </div>
-  </div>
-
-  <!-- Modal Empresa -->
-  <div id="modalEmpresa" class="modal" style="background-color: #fff;">
-    <div class="modal-content">
-    <center>
-       <h4></h4>
-    </center>
-    <div class="z-depth-5" style="background-color: #0375B4; margin-top: 4px; color: #fff; border-radius: 15px 15px;">
-    <span style="font-weight: bold; margin-left:  2px">
-      <center><h4>"Caracteristicas"</h4></center>
-     <p>• Conexión a través de fibra óptica y radioenlaces 1:1 dedicados </p>
-     <p>• Velocidades de acceso desde 1Mbps hasta 1Gbps.</p>
-     <p>• Sistema de monitoreo de tráfico online vía web.</p>
-     <p>• Overbooking 1:1 Simétrico.</p>
-     <p>• Ancho de banda 100% garantizado, sin compresión ni sobresuscripción.</p>
-     <p>• Registro de dominios, hosting compartido, casillas de correo electrónico y pool de direcciones IP públicas.</p>
-     <p>• Pool de ingenieros para soporte técnico 24×7</p>
-     </span>
-    </div>
-     
-    <div class="z-depth-5" style="background-color: #FC4A1A;margin-top: 4px; color: #fff; border-radius: 15px 15px;">
-    <span style="font-weight: bold; margin-left:  2px">
-      <center><h4>"Ventajas"</h4></center>
-     <p>• Máximo respaldo operativo y conectividad permanente.</p>
-     <p>• Fácil acceso a servicios en la Nube (Cloud Computing)</p>
-     <p>• Disponibilidad de clase mundial.</p>
-     <p>• Garantía de alta capacidad y excelentes tiempos de respuesta.</p>
-     <p>• Aislamiento de fallas.</p>
-     <p>• Rápida identificación y solución de problemas.</p>
-     <p>• Visualización de tráfico en tiempo real.</p>
-     <p>• Internet y seguridad en un mismo servicio.</p>
-     <p>• No hay necesidad de adquirir equipos adicionales.</p>
-     <p>• Se adapta al tamaño de tu empresa sin duplicar gastos.</p>
-     <p>• Servicio continuo. Alta disponibilidad sin interrupciones.</p>
-     <p>• Ahorro garantizado de espacio y energía.</p>
-     <p>• Calidad en Juegos Online: Dota2, League Of Legends, Counter Strike Global Offensive, etc.</p>
-     <p>• Capacidad para Stream en VIVO 100% garantizado.</p>
-    </span>    
-    </div>
-
-
-
-   
-
-    </div>
-  </div>
+<script src="js/app.js"></script>
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
 
 
 
 
-
-
-<footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Siguenos en:</h5>
-                 <ul>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#!"><img class="activator  responsive-img" src="imagenes/facebook.png"></a></a></li>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#!"><img class="activator  responsive-img" src="imagenes/twitter.png"></a></li>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#!"><img class="activator  responsive-img" src="imagenes/youtube.png"></a></li>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#modal2"><img  class="activator  responsive-img" src="imagenes/wasap.png"></a></li>
-                    
-                  
-                </ul>          
-              </div>
-              <div class="col l4 offset-l2 s12">
-               <!--  <h5 class="white-text">Links</h5> -->
-                <ul>
-                 <li><a class="page-scroll" href="#servicios">Servicios</a></li>
-                 <li><a class="page-scroll" href="#conocenos">Conocenos</a></li>
-                 <li><a class="page-scroll" href="#direccion">Direccion</a></li>
-                 <li><a class="grey-text text-lighten-3" href="#modal1">Contáctenos</a></li>   
-                  
-                </ul>            
-              </div>
-
-
-
-
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 Todos los derechos reservados.
-            <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/diego.tafurobregon" target="_blank">Página elaborada por TODS</a>
-            </div>
-          </div>
- </footer>
-
-
-
-
-            
-
- <!--Import jQuery before materialize.js-->
- 	    <script src="http://code.jquery.com/jquery-latest.js"></script>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/estilos.js"></script>
-      <script type="text/javascript" src="js/particles.js"></script>
-	    <script type="text/javascript" src="js/particulas.js"></script>
-      <script src="js/scrolling-nav.js"></script>
-      <script type="text/javascript" src="js/correo.js"></script>
-
-      <script src="js/app.js"></script>
-      <!-- stats.js -->
-      <script src="js/lib/stats.js"></script>
-
-<script type="text/javascript">
-
-
-
-$(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-    $('.carousel').carousel();
-});
-
-$(".button-collapse").sideNav();
-
-$(document).ready(function(){
-      $('.slider').slider();
-    });
-
- 
-</script>
 
 <script type="text/javascript">
   
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+$(document).ready(function(){
+      $('.slider').slider();
+      $(".button-collapse").sideNav();
+      $('.modal').modal();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+     $('.slider').slider('indicators','false');
+    });
+</script>
+
+<script type="text/javascript">
+    function changeImagen(){
+       
+        $('.carousel.carousel-slider').carousel('next'); // Move next n times.
+    }
+ setInterval(changeImagen, 5000);
 
 </script>
 
-<script>
-  // var count_particles, stats, update;
-  // stats = new Stats;
-  // stats.setMode(0);
-  // stats.domElement.style.position = 'absolute';
-  // stats.domElement.style.left = '0px';
-  // stats.domElement.style.top = '0px';
-  // document.body.appendChild(stats.domElement);
-  // count_particles = document.querySelector('.js-count-particles');
-  // update = function() {
-  //   stats.begin();
-  //   stats.end();
-  //   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-  //     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  //   }
-  //   requestAnimationFrame(update);
-  // };
-  // requestAnimationFrame(update);
-</script>
-</div>
+
 </body>
 </html>
