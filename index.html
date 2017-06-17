@@ -4,7 +4,7 @@
 	<title>AirClound</title>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
        <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
@@ -21,10 +21,11 @@
 
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="page-scroll" href="#servicios"><i class="material-icons left">supervisor_account</i>Servicios</a></li>       
-        <li><a class="page-scroll" href="#conocenos"><i class="material-icons left">visibility</i>Conocenos </a></li>
-        <li><a class="page-scroll" href="#direccion"><i class="material-icons left">room</i>Direccion</a></li>
-        <li><a class="page-scroll" href="#modal1"><i class="material-icons left">contact_phone</i>Contáctenos</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Servicios<i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i></a></li>
+        <!-- <li><a class="page-scroll" href="#servicios"><i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i>Servicios</a></li>    -->    
+        <li><a class="page-scroll" href="#conocenos"><i class="material-icons left"><img src="iconos/ic_visibility1x.png"></i>Conocenos </a></li>
+        <li><a class="page-scroll" href="#direccion"><i class="material-icons left"><img src="iconos/ic_room1x.png"></i>Direccion</a></li>
+        <li><a class="page-scroll" href="#modal1"><i class="material-icons left"><img src="iconos/ic_perm_phone_msg1x.png"></i>Contáctenos</a></li>
    
       </ul>
       <ul class="side-nav" id="mobile-demo">
@@ -36,6 +37,12 @@
     </div>
     
   </nav>
+  <ul id="dropdown1" class="dropdown-content" style="margin-top: 66px;">
+  <li><a href="#!">Plan Hogar</a></li>
+  <li><a href="#!">Plan Empresarial</a></li>
+  <!-- <li class="divider"></li>
+  <li><a href="#!">Productos</a></li> -->
+</ul>
 </header>
 <!-- 
 <section class="contenedorSlider">
@@ -421,7 +428,14 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
  <!--  <a class="waves-effect waves-light btn" href="#modal1">Modal</a> -->
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <div id="modal1" class="modal" style="background: rgba(0,255,255,1);
+background: -moz-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,255,255,1)), color-stop(100%, rgba(0,205,255,1)));
+background: -webkit-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
+background: -o-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
+background: linear-gradient(to bottom, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#00cdff', GradientType=0 );">
     <div class="modal-content">
       <h4>Enviénos un mensaje</h4>
 
@@ -429,7 +443,7 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
     <form id="#contact-form" class="col s12">
       <div class="row">
         <div class="input-field col s12">
-          <i class="material-icons prefix">account_circle</i>
+          <i class="material-icons prefix"><img src="iconos/ic_account_circle1x.png"></i>
           <input id="icon_prefix name" type="text" class="validate">
           <label for="icon_prefix">Nombres y Apellidos</label>
         </div>
@@ -440,7 +454,7 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
    
       <div class="row">
         <div class="input-field col s12">
-          <i class="material-icons prefix">phone</i>
+          <i class="material-icons prefix"><img src="iconos/ic_phone1x.png"></i>
           <input id="icon_prefix phone" type="text" class="validate">
           <label for="icon_prefix">Celular</label>
         </div>
@@ -453,7 +467,7 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
    
       <div class="row">
         <div class="input-field col s12">
-          <i class="material-icons prefix">email</i>
+          <i class="material-icons prefix"><img src="iconos/ic_email1x.png"></i>
           <input id="icon_prefix email" type="text" class="validate">
           <label for="icon_prefix">Email</label>
         </div>
@@ -465,7 +479,7 @@ LevelNetWorld es tu mejor opción de Internet. Somos una Wisp que te ofrece el s
   
       <div class="row">
         <div class="input-field col s12">
-          <i class="material-icons prefix">mode_edit</i>
+          <i class="material-icons prefix"><img src="iconos/ic_mode_edit1x.png"></i>
           <textarea id="icon_prefix2 mensaje" class="materialize-textarea"></textarea>
           <label for="icon_prefix2">Mensaje:</label>
         </div>
