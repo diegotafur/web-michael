@@ -2552,7 +2552,7 @@ ul:not(.browser-default) li {
 }
 
 a {
-  color: #fff;
+  color: #039be5;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2861,25 +2861,9 @@ ul.staggered-list li {
   }
 }
 
-
-
 .page-footer {
   padding-top: 20px;
-  /*background-color: #000b17;*/
-
-  width: 100%;
- position: absolute;
-
-background: rgba(0,255,255,1);
-background: -moz-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,255,255,1)), color-stop(100%, rgba(0,205,255,1)));
-background: -webkit-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: -o-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: linear-gradient(to bottom, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#00cdff', GradientType=0 );
-
- 
+  background-color: #ee6e73;
 }
 
 .page-footer .footer-copyright {
@@ -3358,9 +3342,9 @@ nav ul a span.badge {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -4199,21 +4183,10 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  /*background-color:#417BFF;*/
-
+  background-color: #ee6e73;
   width: 100%;
   height: 56px;
   line-height: 56px;
-
-background: rgba(0,255,255,1);
-background: -moz-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,255,255,1)), color-stop(100%, rgba(0,205,255,1)));
-background: -webkit-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: -o-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-background: linear-gradient(to bottom, rgba(0,255,255,1) 0%, rgba(0,205,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#00cdff', GradientType=0 );
-
 }
 
 nav.nav-extended {
@@ -4274,9 +4247,6 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
   white-space: nowrap;
-
-  
-
 }
 
 nav .brand-logo.center {
@@ -4339,15 +4309,11 @@ nav ul li.active {
 
 nav ul a {
   transition: background-color .3s;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #fff;
   display: block;
   padding: 0 15px;
   cursor: pointer;
- border-top: 0px solid #FFF ;
-border-right: 1px solid #FFF ;
-border-bottom: 0px solid #FFF ;
-border-left: 1px solid #FFF;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -4362,11 +4328,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
 }
 
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0);;
-
-  color:#000285;
-  border-bottom-style: solid;
-
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 nav ul.left {
@@ -5714,7 +5676,7 @@ button.btn-floating {
   min-height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
-  background-color: #fff;
+  background-color:;
   border-bottom: 1px solid #ddd;
 }
 
@@ -7965,14 +7927,13 @@ input[type=range]:focus::-ms-fill-upper {
   left: 0;
   right: 0;
   bottom: 0;
- /* margin: 0;*/
-  opacity: 0;
+  margin: 0;
 }
 
 .slider .indicators .indicator-item {
   display: inline-block;
   position: relative;
-  
+  cursor: pointer;
   height: 16px;
   width: 16px;
   margin: 0 12px;
