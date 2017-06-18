@@ -2863,7 +2863,7 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #062F4F;
 }
 
 .page-footer .footer-copyright {
@@ -4183,7 +4183,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #062F4F;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4328,7 +4328,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
 }
 
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #0375B4;
 }
 
 nav ul.left {
@@ -5388,7 +5388,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: #fff;
+  background-color: #062F4F;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -5426,7 +5426,7 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  color: #fff;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
