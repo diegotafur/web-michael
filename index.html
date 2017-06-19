@@ -4,7 +4,7 @@
 <title></title>
  <!--Import Google Icon Font-->
      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/estiloPrincipal.css"  media="screen,projection"/>
@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="css/estiloMapa.css" >
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
 
 </head>
 <body id="page-top">
@@ -19,7 +20,7 @@
 <nav class="nav-extended">
     <div class="nav-wrapper">
       <a href="#page-top" class="brand-logo page-scroll"><img src="imagenes/logo.png" width="100px" height="55px;"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"><img src="iconos/ic_menu_white_24dp_1x.png"></i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Servicios<i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i></a></li>
         <!-- <li><a class="page-scroll" href="#servicios"><i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i>Servicios</a></li>    -->    
@@ -37,7 +38,7 @@
     </div>
   </nav>
   <ul id="dropdown1" class="dropdown-content" style="margin-top: 64px;">
-  <li><a class="">Planes</a></li>
+ 
   <li class="divider"></li>
   <li><a target="_blank" class="" href="planHogar.html">Plan Hogar</a></li> 
   <li><a target="_blank" class="page-scroll" href="planEmpresa.html">Plan Empresas</a></li> 
@@ -45,10 +46,10 @@
   <li><a class="page-scroll" href="#direccion">¿Donde adquirirlos?</a></li>
   <li><a href="#modalPago">Pago de servicios</a></li>
   <li><a class="page-scroll" href="#cobertura">Cobertura</a></li>
+  <li onclick="myFunction()"><a class="">Soporte</a></li>
   
   
 </header>
-
 <div class="container" style="width: 100%;background-color:;">
         <!-- Aqui va toda la pagina -->
 <div class="row" style="background-color:;margin:0;padding: 0;">
@@ -304,8 +305,26 @@
           </div>
 </footer>
 
-<!--Inicio Ventanas Modales-->
 
+
+<!--Inicio Ventanas Modales-->
+<!-- Soporte -->
+<!-- Element Showed -->
+  <div class="fixed-action-btn">
+  <a id="menu" class="waves-effect waves-light btn btn-floating btn-large" onclick="myFunction()"><i class="material-icons"><img src="iconos/ic_headset_mic_white_24dp_1x.png"></i></a>
+  </div>
+  <!-- Tap Target Structure -->
+  <div class="tap-target teal white-text" data-activates="menu">
+    <div class="tap-target-content">
+      <h5>Soporte</h5>
+      <p>999999999</p>
+    </div>
+  </div>
+
+
+
+ 
+<!--Fin Soporte -->
 <!-- Modal Structure de contacto -->
 
   <div id="modal1" class="modal">
@@ -409,6 +428,7 @@
 <script type="text/javascript" src="js/particulas.js"></script>
 <script src="js/scrolling-nav.js"></script>
 <script type="text/javascript" src="js/correo.js"></script>
+<script type="text/javascript" src="js/soporte.js"></script>
 
 <script src="js/app.js"></script>
 <!-- stats.js -->
@@ -435,7 +455,12 @@ $(document).ready(function(){
  setInterval(changeImagen, 5000);
 
 </script>
-
-
+<script type="text/javascript">
+function myFunction() {
+    
+    $('.tap-target').tapTarget('open');
+  // $('.tap-target').tapTarget('close');
+}
+</script>
 </body>
 </html>
