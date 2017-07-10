@@ -8163,7 +8163,7 @@ input[type=range]:focus::-ms-fill-upper {
   top: 0;
   left: 0;
   /*background-color: inherit;*/
-  background-color: red;
+  background-color: #d1d1d1;
   border-radius: inherit;
   transition: opacity .3s, -webkit-transform .3s;
   transition: opacity .3s, transform .3s;
