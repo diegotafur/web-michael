@@ -16,7 +16,9 @@
 
 </head>
 
-<body id="page-top" style="background-color: #f8f8f8">
+<body id="page-top" style="background-color: red;overflow-x: hidden; ">
+
+
 <header class="navbar-fixed navMenu z-depth-4">
 <nav class="nav-extended">
     <div class="nav-wrapper">
@@ -32,6 +34,10 @@
       <ul class="side-nav" id="mobile-demo">
         <li><a target="" class="page-scroll" href="#planHogar">Plan Hogar</a></li>
         <li><a target="" class="page-scroll" href="#planEmpresa">Plan Empresas</a></li>
+        <li><a class="page-scroll" href="#direccion">¿Donde adquirirlos?</a></li>
+        <li><a href="#modalPago">Pago de servicios</a></li>
+        <li><a class="page-scroll" href="#cobertura">Cobertura</a></li>
+        <li onclick="myFunction()"><a class="">Soporte</a></li>
         <li><a class="page-scroll" href="#conocenos">Conocenos</a></li>
         <li><a class="page-scroll" href="#direccion">Direccion</a></li>
         <li><a href="#modal1">Contáctenos</a></li>
@@ -118,7 +124,7 @@
 <center>
   <!-- Right to left  -->
     <!-- normal -->
-    <div id="somos" class="ih-item circle effect18 left_to_right"><a class="page-scroll" href="#modalQuienes">
+    <div id="somos" class="ih-item circle effect18 top_to_botton"><a class="page-scroll" href="#modalQuienes">
         <div class="img"><img src="imagenes/quienes_somos.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color:#062F4F;">
@@ -156,7 +162,7 @@
 <div class="col s12 m12 l2">
     <center>
           <!-- colored -->
-    <div id="vision" class="ih-item circle effect18 left_to_right"><a class="page-scroll" href="#modalVision">
+    <div id="vision" class="ih-item circle effect18 top_to_botton"><a class="page-scroll" href="#modalVision">
         <div class="img"><img src="imagenes/antena.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color: #062F4F;">
@@ -278,7 +284,7 @@
   
   <center>
        <!-- hover -->
-    <div class="ih-item square colored effect10 right_to_left" style="height: 400px;"><a href="">
+    <div class="ih-item square colored effect10 right_to_left" style="height: 400px;"><a href="#!">
         <div class="img"><img width="100%" height="400px" src="imagenes/planhogarEconomico.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
@@ -304,7 +310,7 @@
     <center>
       
       <!-- hover -->
-    <div class="ih-item square colored effect10 bottom_to_top" style="height: 400px;"><a href="#">
+    <div class="ih-item square colored effect10 bottom_to_top" style="height: 400px;"><a href="#!">
         <div class="img"><img width="100%" height="400px" src="imagenes/planhogarEscolar.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
@@ -331,7 +337,7 @@
 <center>
   
    <!-- hover -->
-    <div class="ih-item square colored effect10 left_to_right" style="height: 400px;"><a href="#">
+    <div class="ih-item square colored effect10 left_to_right" style="height: 400px;"><a href="#!">
         <div class="img"><img width="100%" height="400px" src="imagenes/planhogarFamilia.png" alt="img" class="responsive-img"></div>
         <div class="info">
           <h3>CARACTERISTICAS</h3>
@@ -354,7 +360,7 @@
   <div class="col s12 m12 l2" style="margin-top: 5px;">
     <center>
       <!-- hover -->
-    <div class="ih-item square colored effect10 top_to_bottom" style="height: 400px;"><a href="#">
+    <div class="ih-item square colored effect10 top_to_bottom" style="height: 400px;"><a href="#!">
         <div class="img"><img width="100%" height="400px" src="imagenes/planhogarPremium.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
@@ -824,19 +830,21 @@
     </div>
   </div>
 
-  <!-- Quienes somos -->
+  <!-- INNOVACIÓN -->
   <div id="modalQuienes" class="modal" style="background-color:#386379 ;color:#fff;">
     <div class="modal-content">
       <center><h4>INNOVACIÓN</h4></center>
-      <p>Desarrollando soluciones tecnológicas que nos permitan ofrecer servicios integrados con las nuevas tendencias del mercado moderno.</p>
+      <div class="">
+        <p>Desarrollando soluciones tecnológicas que nos permitan ofrecer servicios integrados con las nuevas tendencias del mercado moderno.</p>
        <p></p>
+      </div>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
     </div>
   </div>
 
-  <!-- Mision -->
+  <!-- CONFIABILIDAD -->
   <div id="modalMision" class="modal" style="background-color:#386379 ;color:#fff;">
     <div class="modal-content">
       <center><h4>CONFIABILIDAD</h4></center>
@@ -849,7 +857,7 @@
   </div>
 
 
-  <!-- Vision -->
+  <!-- EFICIENCIA -->
   <div id="modalVision" class="modal" style="background-color:#386379 ;color:#fff;">
     <div class="modal-content">
       <center><h4>EFICIENCIA</h4></center>
@@ -883,7 +891,7 @@
     <div class="modal-content">
     <center>
        <h5>Youtube</h5>
-       <h6>Proximamente</h6>
+       <h6>Próximamente</h6>
     </center>
      
     </div>
@@ -895,7 +903,7 @@
     <div class="modal-content">
     <center>
        <h5>Twittter</h5>
-       <h6>Proximamente</h6>
+       <h6>Próximamente</h6>
     </center>
      
     </div>
@@ -907,7 +915,7 @@
     <div class="modal-content">
     <center>
        <h5>Facebook</h5>
-       <h6>Proximamente</h6>
+       <h6>Próximamente</h6>
     </center>
      
     </div>
@@ -975,6 +983,6 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
-
 </body>
+
 </html>
