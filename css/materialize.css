@@ -8077,6 +8077,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .tap-target {
+
   position: absolute;
   font-size: 1rem;
   border-radius: 50%;
@@ -8093,6 +8094,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .tap-target-content {
+  
   position: relative;
   display: table-cell;
 }
