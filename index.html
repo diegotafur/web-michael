@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Policarp</title>
  <!--Import Google Icon Font-->
      <!--Import Google Icon Font-->
      <!--  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
       <!--Import materialize.css-->
+      <link rel="shortcut icon" type="text/css" href="imagenes/logo_puntero.ico">
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/estiloPrincipal.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/ihover.css" >
@@ -13,10 +14,39 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       
+<script type="text/javascript">
+
+  function windowBlurFocus(){
+    var focused = true;
+    window.onfocus = function() {
+        focused = true;
+        onFocus();
+    };
+    window.onblur = function() {
+        focused = false;
+        onBlur();
+    };
+  }
+  // CHANGE SOMETHING ON EACH STATE
+  function onBlur() {
+    document.title = "Ey no te olvides de mi";      // NEW TITLE FOR THE PAGE
+    //document.body.className = 'blur'; // CHANGE BODY CLASS
+  };
+  function onFocus(){
+    document.title = "Policarp";     // NEW TITLE FOR THE PAGE
+    //document.body.className = 'focus';  // CHANGE BODY CLASS
+  };
+  // UNIT
+  windowBlurFocus();
+
+ 
+</script>
+
+
 
 </head>
 
-<body id="page-top" style="background-color: #eeeeee ;overflow-x: hidden; ">
+<body id="page-top" style="background-color: #eeeeee ;overflow-x: hidden; " unload="javascript:cambioPagina()">
 <header class="navbar-fixed navMenu z-depth-4">
 <nav class="nav-extended">
     <div class="nav-wrapper">
@@ -60,7 +90,7 @@
 <div class="row" style="background-color:;margin:0;padding: 0;">
 <!-- Aqui va la zona de particulas -->   
  <div class="col s12 m12 l12" style="margin:0;padding: 0;position: relative;">
-   <img src="imagenes/banerParticula.jpg" class="responsive-img" width="100%" height="100%">
+   <img src="imagenes/bannerParticulas1.png" class="responsive-img" width="100%" height="100%">
 
 <div  class="col s7 push-s5" id="particles-js"  style="position: absolute;  left: 10px; top: 30px; z-index: 1; width: 100%;height: 100%;"> 
           <div style="color: #fff;position: absolute;z-index: 2;margin-top: 3%;margin-left: 15%;">
@@ -114,15 +144,15 @@
  <center><h3>CONOCENOS</h3></center> 
 </div>
 
-<div class="col s12 m12 l3">
+<div class="col s12 m12 l2" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
 
-<div class="col s12 m12 l2">
+<div class="col s12 m12 l2 xl2" style="background-color: ;">
 <center>
   <!-- Right to left  -->
     <!-- normal -->
-    <div id="somos" class="ih-item circle effect18 top_to_botton"><a class="page-scroll" href="#modalQuienes">
+    <div id="somos" class="ih-item circle effect18 bottom_to_top"><a class="page-scroll" href="#modalQuienes">
         <div class="img"><img src="imagenes/quienes_somos.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color:#062F4F;">
@@ -132,17 +162,20 @@
         </div></a>
     </div>
     <!-- end normal -->
-    <h4>¿Qué es Olycarp?</h4>
+    <h4>¿Qué es Olicarp?</h4>
     <p>Olycarp es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
 </center>
  
 </div>
+<div class="col s12 m12 l1" style="background-color: ;">
+  <!--esto es margen de las columnas-->
+</div>
 
-<div class="col s12 m12 l2">
+<div class="col s12 m12 l2" style="background-color: ;" >
     <center>
           <!-- colored -->
     <div id="mision" class="ih-item circle effect18 bottom_to_top"><a class="page-scroll" href="#modalMision">
-        <div class="img"><img src="imagenes/conocenosredsocial.png" alt="img"></div>
+        <div class="img"><img src="imagenes/quenosdiferencia.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color: #062F4F;">
             <h3>CONFIABILIDAD</h3>
@@ -156,12 +189,15 @@
     </center>
 
 </div>
+<div class="col s12 m12 l1" style="background-color: ;">
+  <!--esto es margen de las columnas-->
+</div>
 
-<div class="col s12 m12 l2">
+<div class="col s12 m12 l2" style="background-color: ;">
     <center>
           <!-- colored -->
-    <div id="vision" class="ih-item circle effect18 top_to_botton"><a class="page-scroll" href="#modalVision">
-        <div class="img"><img src="imagenes/antena.jpg" alt="img"></div>
+    <div id="vision" class="ih-item circle effect18 bottom_to_top"><a class="page-scroll" href="#modalVision">
+        <div class="img"><img src="imagenes/elegirnos.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color: #062F4F;">
             <h3>EFICIENCIA</h3>
@@ -175,7 +211,7 @@
     </center>
 </div>
 
-<div class="col s12 m12 l3">
+<div class="col s12 m12 l2" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
   
@@ -253,7 +289,7 @@
 <div class="col s12 m12 l6">
  <div class="carousel carousel-slider z-depth-3" data-indicators="true" style="margin-top: 30px; height: 400px; width:100%">
   <div class="carousel-fixed-item center">
-     <!--  <a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo ya!!</a> -->
+   <!--   <a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo aqui!!</a> -->
      
     </div>
 
@@ -273,16 +309,16 @@
 
 <!-- Aqui empeiza los planes -->   
 <div class="row" style="background-color: ;margin-top: 80px;padding-top: 30px;padding-bottom: 30px;">
-  <div class="col s12 m12 l2" style="margin-top: 5px;">
+  <div class="col s12 m12 l2" style="margin-top: 5px;background-color: ;">
     <!--Esto es margen--> 
   </div>
 
 
-  <div class="col s12 m12 l2" style="margin-top: 5px; margin-right: 15px;">
+  <div class="col s12 m12 l2" style="margin-top: 5px; background-color: ;">
   
   <center>
        <!-- hover -->
-    <div class="ih-item square colored effect10 right_to_left" style="height: 400px;"><a href="#!">
+    <div class="ih-item square colored effect10 right_to_left" style="height: ;"><a href="#!">
         <div class="img"><img width="100%" height="400px" src="imagenes/planhogarEconomico.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
@@ -298,17 +334,17 @@
 
       <!--Tarjetas de planes fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo ya!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
     </div>
   
   </div>
 
-  <div class="col s12 m12 l2" style="margin-top: 5px;margin-right: 15px;">
+  <div class="col s12 m12 l2" style="margin-top: 5px; background-color: ;">
    
     <center>
       
       <!-- hover -->
-    <div class="ih-item square colored effect10 bottom_to_top" style="height: 400px;"><a href="#!">
+    <div class="ih-item square colored effect10 bottom_to_top" style="height: ;"><a href="#!">
         <div class="img"><img width="100%" height="400px" src="imagenes/planhogarEscolar.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
@@ -325,18 +361,18 @@
 
       <!--Tarjetas de planes Fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo ya!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
     </div>
  
   </div>
 
-  <div class="col s12 m12 l2" style="margin-top: 5px; margin-right: 15px;">
+  <div class="col s12 m12 l2" style="margin-top: 5px; background-color: ;height: ;">
 
-<center>
+  <center>
   
    <!-- hover -->
-    <div class="ih-item square colored effect10 left_to_right" style="height: 400px;"><a href="#!">
-        <div class="img"><img width="100%" height="400px" src="imagenes/planhogarFamilia.png" alt="img" class="responsive-img"></div>
+    <div class="ih-item square colored effect10 left_to_right" style=""><a href="#!">
+        <div class="img"><img width="100%" height="100%" src="imagenes/planhogarFamilia.png" alt="img" class="responsive-img"></div>
         <div class="info">
           <h3>CARACTERISTICAS</h3>
           <p>• Videoconferencias sin interrupciones.</p>
@@ -350,15 +386,15 @@
    
       <!--Tarjetas de planes fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo ya!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
     </div>
     
   </div>
 
-  <div class="col s12 m12 l2" style="margin-top: 5px;">
+  <div class="col s12 m12 l2" style="margin-top: 5px;background-color: ;">
     <center>
       <!-- hover -->
-    <div class="ih-item square colored effect10 top_to_bottom" style="height: 400px;"><a href="#!">
+    <div class="ih-item square colored effect10 top_to_bottom" style="height: ;"><a href="#!">
         <div class="img"><img width="100%" height="400px" src="imagenes/planhogarPremium.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
@@ -373,13 +409,13 @@
      
       <!--Tarjetas de planes fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo ya!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
     </div>
   
   </div>
 
 
-  <div class="col s12 m12 l2" style="margin-top: 5px;">
+  <div class="col s12 m12 l2" style="margin-top: 5px;background-color: ;">
     <!--Esto es margen--> 
   </div>
 </div>
@@ -454,12 +490,12 @@
 <div class="col s12 m12 l6">
  <div class="carousel carousel-slider" data-indicators="true" style="margin-top: 30px;">
   <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">Adquierelo aqui!!</a>
+    <!--   <a class="btn waves-effect white grey-text darken-text-2">Adquierelo aqui!!</a> -->
     </div>
-    <a class="carousel-item" href="#one!"><img src="imagenes/planhogar1.png" width="100%" height="400px"></a>
-    <a class="carousel-item" href="#two!"><img src="imagenes/planhogar2.png" width="100%" height="400px"></a>
-    <a class="carousel-item" href="#three!"><img src="imagenes/planhogar1.png" width="100%" height="400px"></a>
-    <a class="carousel-item" href="#four!"><img src="imagenes/planhogar2.png" width="100%" height="400px"></a>
+    <a class="carousel-item" href="#one!"><img src="imagenes/bannerEmpresa1.png" width="100%" height="400px"></a>
+    <a class="carousel-item" href="#two!"><img src="imagenes/bannerEmpresa2.png" width="100%" height="400px"></a>
+    <a class="carousel-item" href="#three!"><img src="imagenes/bannerEmpresa3.png" width="100%" height="400px"></a>
+    <a class="carousel-item" href="#four!"><img src="imagenes/bannerEmpresa4.png" width="100%" height="400px"></a>
   </div>
 
 </div>
@@ -820,11 +856,17 @@
   <!-- Modal Structure Pagos -->
   <div id="modalPago" class="modal" >
     <div class="modal-content" style="background-color: #f15c22;color: #fff;">
-      <center><h4>CUENTA BCP</h4></center>
-
-      <div style="margin-bottom: 15px;">
-        <p>Puedes realizar los pagos en cualquier agente BCP a la siguiente cuenta:</p>
-       <p><h5>CTA: 123131321321345646546</h5></p>
+      <center><h4>PASOS PARA EL PAGO DE SERVICIO</h4></center>
+      <br>
+      <div style="margin-bottom: 15px;font-weight: bold;">
+        <p>- Los pagos de servicios se realizara mediante deposito en cualquier agencia BCP o agentes BCP<h5>(N° de cuenta: 19127871880012).</h5>
+</p>
+       <p>- Una vez haya efectuado el deposito enviar foto del boucher al número 960715898.</p>
+       <p>- Para cualquier duda consulta o sugerencia no dude en comunicarse a los siguientes números:</p>
+       <p>  Telf. fijo  : 4922913</p> 
+       <p>  Celular     : 960715898</p> 
+       <br>
+       <p>Atte. Olicarp comprometidos con el mejor servicio al cliente. </p>
       </div>
     <div>
     <center><img class="z-depth-4" width="200" height="100" src="imagenes/bcp.png"></center>  
