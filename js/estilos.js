@@ -13,7 +13,7 @@
   }
   // CHANGE SOMETHING ON EACH STATE
   function onBlur() {
-    document.title = "No te olvides de mi";      // NEW TITLE FOR THE PAGE
+    document.title = "¡Ey! no me olvides";      // NEW TITLE FOR THE PAGE
     //document.body.className = 'blur'; // CHANGE BODY CLASS
   };
   function onFocus(){
