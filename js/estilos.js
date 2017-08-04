@@ -17,7 +17,7 @@
     //document.body.className = 'blur'; // CHANGE BODY CLASS
   };
   function onFocus(){
-    document.title = "Olicarp";     // NEW TITLE FOR THE PAGE
+    document.title = "Olycarp";     // NEW TITLE FOR THE PAGE
     //document.body.className = 'focus';  // CHANGE BODY CLASS
   };
   // UNIT
