@@ -1,6 +1,4 @@
-
-
-  function windowBlurFocus(){
+function windowBlurFocus(){
     var focused = true;
     window.onfocus = function() {
         focused = true;
@@ -22,5 +20,3 @@
   };
   // UNIT
   windowBlurFocus();
-
- 

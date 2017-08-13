@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Olycarp</title>
- <!--Import Google Icon Font-->
-     <!--Import Google Icon Font-->
-     <!--  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+	<title>Olycarp</title>
+	  <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+	  <link rel="shortcut icon" type="text/css" href="imagenes/logo_puntero.ico">
+ 	  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link rel="shortcut icon" type="text/css" href="imagenes/logo_puntero.ico">
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/estiloPrincipal.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/principal.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/ihover.css" >
       <link rel="stylesheet" href="css/estiloMapa.css" >
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-
-<body id="page-top" style="background-color: #eeeeee ;overflow-x: hidden;">
-<header class="navbar-fixed navMenu z-depth-4">
-<nav class="nav-extended">
-    <div class="nav-wrapper">
-      <a href="#page-top" class="brand-logo page-scroll"><img src="imagenes/logo_michael.png" width="180px" height="60px;"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"><img src="iconos/ic_menu_white_24dp_1x.png"></i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Servicios<i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i></a></li>
+<body id="page-top">
+  <!-- inicio de cabecera -->  
+  <header class="navbar-fixed navMenu z-depth-4">
+	<nav class="nav-extended">
+    	<div class="nav-wrapper">
+      		<a href="#page-top" class="brand-logo page-scroll"><img src="imagenes/logo_michael.png" width="180px" height="60px;"></a>
+      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"><img src="iconos/ic_menu_white_24dp_1x.png"></i></a>
+      			<ul id="nav-mobile" class="right hide-on-med-and-down">
+        		<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Servicios<i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i></a></li>
         <!-- <li><a class="page-scroll" href="#servicios"><i class="material-icons left"><img src="iconos/ic_supervisor_account1x.png"></i>Servicios</a></li>    -->    
         <li><a class="page-scroll" href="#conocenos"><i class="material-icons left"><img src="iconos/ic_visibility1x.png"></i>Conocenos </a></li>
         <li><a class="page-scroll" href="#direccion"><i class="material-icons left"><img src="iconos/ic_room1x.png"></i>Direccion</a></li>
-        <li><a class="page-scroll" href="#modal1"><i class="material-icons left"><img src="iconos/ic_perm_phone_msg1x.png"></i>Contáctenos</a></li>
+        <li><a class="modal-trigger" href="#modal1"><i class="material-icons left"><img src="iconos/ic_perm_phone_msg1x.png"></i>Contáctenos</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
       <li><a class="page-scroll" href="#conocenos">Conocenos</a></li>
         <li><a target="" class="page-scroll" href="#planHogar">Plan Hogar</a></li>
         <li><a target="" class="page-scroll" href="#planEmpresa">Plan Empresas</a></li>
         <li><a class="page-scroll" href="#direccion">¿Donde adquirirlos?</a></li>
-        <li><a href="#modalPago">Pago de servicios</a></li>
+        <li><a href="#modalPago" class="modal-trigger">Pago de servicios</a></li>
         <li><a class="page-scroll" href="#cobertura">Cobertura</a></li>
         <li onclick="myFunction()"><a class="">Soporte</a></li>
         <li><a class="page-scroll" href="#direccion">Direccion</a></li>
-        <li><a href="#modal1">Contáctenos</a></li>
+        <li><a  class="modal-trigger" href="#modal1">Contáctenos</a></li>
       </ul>
     </div>
   </nav>
@@ -48,89 +48,34 @@
   <li><a target="" class="page-scroll" href="#planEmpresa">Plan Empresas</a></li> 
   <li class="divider"></li>
   <li><a class="page-scroll" href="#direccion">¿Donde adquirirlos?</a></li>
-  <li><a href="#modalPago">Pago de servicios</a></li>
+  <li><a href="#modalPago" class="modal-trigger">Pago de servicios</a></li>
   <li><a class="page-scroll" href="#cobertura">Cobertura</a></li>
   <li onclick="myFunction()"><a class="">Soporte</a></li>
-  
-  
 </header>
- <!-- Aqui va toda la pagina -->
-<div class="container" style="width: 100%;background-color:;">
-       <!-- Aqui va la zona de particulas -->   
-<div class="row" style="background-color:;margin:0;padding: 0;">
-  <div class="col s12 m12 l12" style="margin:0;padding: 0;position: relative;">
-    <div class="carousel carousel-slider z-depth-3" data-indicators="true">
-      <a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas1.png" class="responsive-img" width="100%" height="100%"></a>
-      <a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas2.png" class="responsive-img" width="100%" height="100%"></a>
-
-        <div  class="col s7 push-s5" id="particles-js"  style="position: absolute;  left: 10px; top: 30px; z-index: 1; width: 100%;height: 100%;"> 
-          <div style="color: #fff;position: absolute;z-index: 2;margin-top: 3%;margin-left: 15%;">
-            <span><h4>Conexion dedicada</h4> </span>
-            <span><h4  style="margin-left: 10 %;">100% fibra optica</h4> </span>       
-          </div>
-        </div>  
-    </div>
-  </div>
+  <!-- fin de cabecera-->
+  <!-- inicio de particulas-->
+<div class="row">
+	<div class="carousel carousel-slider">
+    	<a class="carousel-item" href="#one!"><img src="imagenes/pruebaParticulas1.jpg" width="100%"></a>
+     	<a class="carousel-item" href="#one!"><img src="imagenes/pruebaParticulas2.jpg" width="100%"></a>
+ 	</div>
 </div>
+  <!-- fin de particulas-->
 
 
-
-
-
- <!-- Aqui termina la zona de particulas -->
-
-
-<!-- Aqui empieza la seccion de conocenos -->  
-<div id="conocenos" class="row" style="background-color: ; color: ;">
-<div class="section"> 
-  <div class="">
-    <ul class="">
-      <li>
-        <img src="imagenes/conocenos1.jpg" class="responsive-img" width="100%" height="100%"> 
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Comprometidos con el cliente.</h5>
-        </div>
-      </li>
-      
-     <!--  <li>
-        <img src="imagenes/conocenos2.jpg" class="responsive-img"> 
-        <div class="caption left-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Vision.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos3.jpg" class="responsive-img"> 
-        <div class="caption right-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Experiencia comprobada..</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos4.jpg" class="responsive-img"> 
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Soluciones adecuadas al cliente.</h5>
-        </div>
-      </li> -->
-
-    </ul>
-  </div>
-</div>
-<div class="col s12 m12 l12">
- <center><h3>CONOCENOS</h3></center> 
-</div>
-
+  <!-- inicio conocenos-->
+<div id="conocenos" class="row" style="background-color: ;">
+	<div class="col s12 m12 l12">
+ 		<center><h3>CONOCENOS</h3></center> 
+	</div>
 <div class="col s12 m12 l2" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
-
 <div class="col s12 m12 l2 xl2" style="background-color: ;">
 <center>
   <!-- Right to left  -->
     <!-- normal -->
-    <div id="somos" class="ih-item circle effect18 bottom_to_top"><a class="page-scroll" href="#modalQuienes">
+    <div id="somos" class="ih-item circle effect18 bottom_to_top"><a class="modal-trigger" href="#modalQuienes">
         <div class="img"><img src="imagenes/quienes_somos.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color:#062F4F;">
@@ -143,16 +88,14 @@
     <h4>¿Qué es Olycarp?</h4>
     <p>Olycarp es tu mejor opción de Internet. Somos una Wisp que te ofrece el servicio de Internet inalámbrico a través de nuestra red propia de antenas AirMAX para que navegues sin preocupaciones.</p>
 </center>
- 
 </div>
 <div class="col s12 m12 l1" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
-
 <div class="col s12 m12 l2" style="background-color: ;" >
     <center>
           <!-- colored -->
-    <div id="mision" class="ih-item circle effect18 bottom_to_top"><a class="page-scroll" href="#modalMision">
+    <div id="mision" class="ih-item circle effect18 bottom_to_top"><a class="modal-trigger" href="#modalMision">
         <div class="img"><img src="imagenes/quenosdiferencia.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color: #062F4F;">
@@ -165,16 +108,14 @@
     <h4>¿Qué nos diferencia?</h4>
     <p>Compartimos tu pasión por internet por ello traemos a tu domicilio, una avanzada tecnología que nos permite ofrecerte la experiencia Online que tanto esperabas. Nuestro enfoque en el cliente hace que nos esforcemos día a día por llevarte un servicio de primer nivel.</p>
     </center>
-
 </div>
 <div class="col s12 m12 l1" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
-
 <div class="col s12 m12 l2" style="background-color: ;">
     <center>
           <!-- colored -->
-    <div id="vision" class="ih-item circle effect18 bottom_to_top"><a class="page-scroll" href="#modalVision">
+    <div id="vision" class="ih-item circle effect18 bottom_to_top"><a class="modal-trigger" href="#modalVision">
         <div class="img"><img src="imagenes/elegirnos.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back" style="background-color: #062F4F;">
@@ -188,118 +129,50 @@
     <p>Porque somos expertos en Internet y por lo tanto contamos con la infraestructura y el personal técnico necesarios para darte la mejor solución de comunicaciones, de una manera personalizada, rápida y económicamente accesible para brindarte el servicio que necesitas.</p>
     </center>
 </div>
-
 <div class="col s12 m12 l2" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
-  
 </div>
-<!-- Aqui termina la seccion de conocenos --> 
+<!-- fin conocenos-->
 
-
-
-<!-- Aqui empeiza plan hogar -->   
-<div id="planHogar" class="row" style="background-color:;color:;margin:0;padding: 0; margin-bottom: 15px;padding-bottom: 20px;">
-  <div class=""> 
-  <div class="">
-    <ul class="">
-      <li>
-        <img src="imagenes/bannerdivideplanhogar.png" class="responsive-img" width="100%" height="100%"> <!-- random image -->
-        <div class="caption center-align">
-          <h3></h3>
-
-          <h5 class="light grey-text text-lighten-3"></h5>
-        </div>
-      </li>
-  <!--     <li>
-        <img src="imagenes/conocenos2.jpg" class="responsive-img"> 
-        <div class="caption left-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Vision.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos3.jpg" class="responsive-img"> 
-        <div class="caption right-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Experiencia comprobada..</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos4.jpg" class="responsive-img"> 
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Soluciones adecuadas al cliente.</h5>
-        </div>
-      </li> -->
-    </ul>
-  </div>
-</div>
+<!-- Inicio plan hogar-->
+<div id="planHogar" class="row" style="background-color: ;">	
+  		<div class="">
+    		<ul class="">
+      			<li>
+        		<img src="imagenes/bannerDivisor.jpg" class="responsive-img" width="100%" height="100%"> 
+      			</li>  
+    		</ul>
+  		</div>
 <div class="col s12 m12 l12">
- <center><h3>Plan Hogar</h3></center> 
+    <center><h3>PLAN HOGAR</h3></center> 
 </div>
-<div class="col s12 m12 l2">
+
+<div class="row">
+<div class="col s12 m12 l3" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
-
-  <div class="card col s12 m12 l2" style="margin-top: 30px;">
-
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="imagenes/hogar1.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Plan hogar<i class="material-icons right"><!-- <img src="iconos/ic_more_vert_black_24dp_1x.png"> --></i></span>
-      <p><a href="#modal1">Adquieralo aqui!!</a></p>
-    </div>
-    <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Descripcion<i class="material-icons right"><img class="card-title" src="iconos/ic_close_black_24dp_1x.png"></i></span>
-   
-      
-      <p>
-      Excelentes velocidades de subida y descarga. Para ver películas en línea, descargar música, fotos, todos los archivos que quieras y jugar en línea con la conexión más estable.
-      </p>
-      <p>
-      Tendrás una gratificante experiencia de navegación, incluso cuando toda tu familia se conecta al mismo tiempo en diferentes dispositivos.
-      </p>
-    </div>
-
-  </div>
-
-<div class="col s12 m12 l6">
- <div class="carousel carousel-slider " data-indicators="" style="margin-top: 30px;background-color: ">
-  
-    <!-- <a class="carousel-item" href="#one!"><img src="imagenes/bannerHogar1.png" width="100%" height="100%"  class=""></a>
-    <a class="carousel-item" href="#two!"><img src="imagenes/bannerHogar2.png" width="100%" height="100%" class=""></a>
-    <a class="carousel-item" href="#three!"><img src="imagenes/bannerHogar3.png" width="100%" height="100%" class=""></a> -->
-   <!--  <a class="carousel-item" href="#four!"><img src="imagenes/bannerHogar4.png" width="100%" height="400px" class=""></a> -->
-<a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas1.png" class="responsive-img" width="100%" height="100%"></a>
-<a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas2.png" class="responsive-img" width="100%" height="100%"></a>
-
-
-
+<div class="col s12 m12 l6 z-depth-4" style="background-color: ;">
+ <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#one!"><img src="imagenes/pruebaParticulas1.jpg" width="100%"></a>
+      <a class="carousel-item" href="#one!"><img src="imagenes/pruebaParticulas2.jpg" width="100%"></a>
   </div>
 </div>
-
-<div class="col s12 m12 l2">
+<div class="col s12 m12 l3" style="background-color:;">
   <!--esto es margen de las columnas-->
 </div>
 </div>
 
-
-
-<!-- Aqui empeiza los planes -->   
-<div class="row" style="background-color: ;margin-top: 10px;padding: 50px;padding-bottom: 30px;">
-  <div class="col s12 m12 l2" style="margin-top: 5px;background-color: ;">
-    <!--Esto es margen--> 
+  <!--Aqui inicia los planes de hogar--> 
+<div class="row">
+  <div class="col s12 m12 l2" style="margin-top: ;background-color:;">
+    <!--Esto es margen de los planes--> 
   </div>
-
-
-  <div class="col s12 m12 l2" style="margin-top: 5px; background-color: ;">
-  
+  <div class="col s12 m12 l2 " style="margin-top: 5px; background-color: ;">
   <center>
        <!-- hover -->
-    <div class="ih-item square colored effect10 right_to_left" style="height: ;"><a href="#!">
-        <div class="img"><img width="100%" height="400px" src="imagenes/planhogarEconomico.png" alt="img" class="responsive-img"></div>
+    <div class="ih-item square colored effect10 right_to_left z-depth-4" style="height: ;"><a href="#!">
+        <div class="img"><img width="100%" height="300px" src="imagenes/planhogarEconomico.png" alt="img" class=""></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
           <p>• Comparte fotos, música y videos.</p>
@@ -308,24 +181,19 @@
         </div></a>
     </div>
     <!-- end hover -->
-
   </center>
-
-
       <!--Tarjetas de planes fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse modal-trigger" href="#modal1">Adquierelo!!</a></center>
     </div>
-  
   </div>
-
   <div class="col s12 m12 l2" style="margin-top: 5px; background-color: ;">
    
     <center>
       
       <!-- hover -->
-    <div class="ih-item square colored effect10 bottom_to_top" style="height: ;"><a href="#!">
-        <div class="img"><img width="100%" height="400px" src="imagenes/planhogarEscolar.png" alt="img" class="responsive-img"></div>
+    <div class="ih-item square colored effect10 bottom_to_top z-depth-4" style="height: ;"><a href="#!">
+        <div class="img"><img width="100%" height="300px" src="imagenes/planhogarEscolar.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
           <p>• Disfruta tus películas por internet.</p>
@@ -335,23 +203,18 @@
         </div></a></div>
     <!-- end hover -->
     </center>
-      
-
-
-
       <!--Tarjetas de planes Fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse modal-trigger" href="#modal1">Adquierelo!!</a></center>
     </div>
  
   </div>
-
   <div class="col s12 m12 l2" style="margin-top: 5px; background-color: ;height: ;">
 
 <center> 
    <!-- hover -->
-    <div class="ih-item square colored effect10 left_to_right" style=""><a href="#!">
-        <div class="img"><img width="100%" height="100%" src="imagenes/planhogarFamilia.png" alt="img" class="responsive-img"></div>
+    <div class="ih-item square colored effect10 left_to_right z-depth-4" style=""><a href="#!">
+        <div class="img"><img width="100%" height="300px" src="imagenes/planhogarFamilia.png" alt="img" class="responsive-img"></div>
         <div class="info">
           <h3>CARACTERISTICAS</h3>
           <p>• Videoconferencias sin interrupciones.</p>
@@ -361,20 +224,17 @@
     </div>
     <!-- end hover -->
 </center>
-
-   
       <!--Tarjetas de planes fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse modal-trigger" href="#modal1">Adquierelo!!</a></center>
     </div>
     
   </div>
-
-  <div class="col s12 m12 l2" style="margin-top: 5px;background-color: ;">
+    <div class="col s12 m12 l2" style="margin-top: 5px;background-color: ;">
     <center>
       <!-- hover -->
-    <div class="ih-item square colored effect10 top_to_bottom" style="height: ;"><a href="#!">
-        <div class="img"><img width="100%" height="400px" src="imagenes/planhogarPremium.png" alt="img" class="responsive-img"></div>
+    <div class="ih-item square colored effect10 top_to_bottom z-depth-4" style="height: ;"><a href="#!">
+        <div class="img"><img width="100%" height="300px" src="imagenes/planhogarPremium.png" alt="img" class="responsive-img"></div>
         <div class="info">
            <h3>CARACTERISTICAS</h3>
           <p>• La conexión más rápida.</p>
@@ -388,118 +248,53 @@
      
       <!--Tarjetas de planes fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1">Adquierelo!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse modal-trigger" href="#modal1">Adquierelo!!</a></center>
     </div>
   
   </div>
-
-
-  <div class="col s12 m12 l2" style="margin-top: 5px;background-color: ;">
-    <!--Esto es margen--> 
+  <div class="col s12 m12 l2" style="background-color: ;">
+  <!--esto es margen de las columnas-->
   </div>
+
 </div>
-<!-- Aqui termina los planes -->   
-<!-- Aqui termina la seccion plan hogar-->
-
-
-
-<!-- Aqui empeiza plan empresas -->   
-<div id="planEmpresa" class="row" style="background-color: ;margin:0;padding: 0; margin-bottom: 15px;padding-bottom: 20px;">
-  <div class="section"> 
-  <div class="">
-    <ul class="">
-      <li>
-        <img src="imagenes/divisionEmpresa.png" class="responsive-img" height="100%" width="100%"> <!-- random image -->
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
-        </div>
-      </li>
-  <!--     <li>
-        <img src="imagenes/conocenos2.jpg" class="responsive-img"> 
-        <div class="caption left-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Vision.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos3.jpg" class="responsive-img"> 
-        <div class="caption right-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Experiencia comprobada..</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos4.jpg" class="responsive-img"> 
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Soluciones adecuadas al cliente.</h5>
-        </div>
-      </li> -->
-    </ul>
-  </div>
+<!--Aqui termina los planes de hogar--> 
 </div>
+<!-- fin plan hogar-->
+
+<!-- Inicio plan Empresa-->
+<div id="planEmpresa" class="row" style="background-color:;">  
+      <div class="">
+        <ul class="">
+            <li>
+            <img src="imagenes/bannerDivisor.jpg" class="responsive-img" width="100%" height="100%"> 
+            </li>  
+        </ul>
+      </div>
 <div class="col s12 m12 l12">
- <center><h3>Plan Empresas</h3></center> 
+    <center><h3>PLAN EMPRESA</h3></center> 
 </div>
-<div class="col s12 m12 l2">
+
+<div class="row">
+<div class="col s12 m12 l3" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
-
-<div style="background-color: red;">
-  <div class="card col s12 m12 l2" style="margin-top: 30px;">
-
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="imagenes/empresa1.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Plan Empresas<i class="material-icons right"><!-- <img src="iconos/ic_more_vert_black_24dp_1x.png"> --></i></span>
-      <p><a href="#">Adquieralo aqui!!</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Plan Empresas<i class="material-icons right"><!-- <img src="iconos/ic_close_black_24dp_1x.png"> --></i></span>
-      <p>
-      Excelentes velocidades de subida y descarga. Para ver películas en línea, descargar música, fotos, todos los archivos que quieras y jugar en línea con la conexión más estable.
-      </p>
-      <p>
-      Tendrás una gratificante experiencia de navegación, incluso cuando toda tu familia se conecta al mismo tiempo en diferentes dispositivos.
-      </p>
-    </div>
+<div class="col s12 m12 l6 z-depth-4" style="background-color: ;">
+ <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#one!"><img src="imagenes/pruebaParticulas1.jpg" width="100%"></a>
+      <a class="carousel-item" href="#one!"><img src="imagenes/pruebaParticulas2.jpg" width="100%"></a>
   </div>
 </div>
-
-<div class="col s12 m12 l6">
-  <div class="carousel carousel-slider " data-indicators="" style="margin-top: 30px;background-color: ">
-  
-    <!-- <a class="carousel-item" href="#one!"><img src="imagenes/bannerHogar1.png" width="100%" height="100%"  class=""></a>
-    <a class="carousel-item" href="#two!"><img src="imagenes/bannerHogar2.png" width="100%" height="100%" class=""></a>
-    <a class="carousel-item" href="#three!"><img src="imagenes/bannerHogar3.png" width="100%" height="100%" class=""></a> -->
-   <!--  <a class="carousel-item" href="#four!"><img src="imagenes/bannerHogar4.png" width="100%" height="400px" class=""></a> -->
-<a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas1.png" class="responsive-img" width="100%" height="100%"></a>
-<a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas2.png" class="responsive-img" width="100%" height="100%"></a>
-
-
-
-  </div>
-
-</div>
-
-
-
-<div class="col s12 m12 l2">
+<div class="col s12 m12 l3" style="background-color: ;">
   <!--esto es margen de las columnas-->
 </div>
 </div>
 
-
-
-
-
-<!-- Aqui empeiza los planes -->   
-<div class="row" style="background-color: ;margin-top: 30px;padding-top: 30px;padding-bottom: 30px;">
-  <div class="col s12 m12 l2" style="margin-top: 5px;">
-    <!--Esto es margen--> 
+  <!--Aqui inicia los planes de hogar--> 
+<div class="row">
+  <div class="col s12 m12 l2" style="margin-top: ;background-color: ;">
+    <!--Esto es margen de los planes--> 
   </div>
+
 
   <div class="col s12 m12 l8" style="margin-top: 1px;">
     <div  style="background-color:;padding: 5px; color: #fff; ">
@@ -507,7 +302,7 @@
        
         <ul class="collapsible" data-collapsible="accordion">
           <li  style="background-color:#003875">
-            <div class="collapsible-header"><span class="new badge" data-badge-caption="ver"></span><i class="material-icons"></i><h4>Características</h4></div>
+            <div class="collapsible-header"><span class="new badge" data-badge-caption="ver"></span><i class="material-icons"></i><h4 style="color: #000">Características</h4></div>
             <div class="collapsible-body">
             <p>• Conexión a través de fibra óptica y radioenlaces 1:1 dedicados</p>
             <p>• Velocidades de acceso desde 1Mbps hasta 1Gbps.</p>
@@ -517,11 +312,9 @@
             <p>• Registro de dominios, hosting compartido, casillas de correo electrónico y pool de direcciones IP públicas.</p>
             <p>• Pool de ingenieros para soporte técnico 24×7</p>
             </div>
-
           </li>
-
           <li style="background-color:#003875;">
-            <div class="collapsible-header"><span class="new badge" data-badge-caption="ver">  </span><i class="material-icons"></i><h4>Ventajas</h4></div>
+            <div class="collapsible-header"><span class="new badge" data-badge-caption="ver">  </span><i class="material-icons"></i><h4 style="color: #000">Ventajas</h4></div>
             <div class="collapsible-body">
             <p>• Máximo respaldo operativo y conectividad permanente.</p>
             <p>• Fácil acceso a servicios en la Nube (Cloud Computing)</p>
@@ -539,174 +332,83 @@
             </div>
           </li>
         </ul>
-
-
-
       <!--Tarjetas de planes fin-->
     <div style="margin-top: 10px;">
-      <center><a  class="btn waves-effect white black-text darken-text-2 pulse" href="#modal1" >Adquierelo ya!!</a></center>
+      <center><a  class="btn waves-effect white black-text darken-text-2 pulse modal-trigger" href="#modal1" >Adquierelo ya!!</a></center>
     </div>
   </div> 
-
-
-
-
-
   </div>
-
-  
-
-
-
-
-  <div class="col s12 m12 l2" style="margin-top: 5px;">
-    <!--Esto es margen--> 
+  <div class="col s12 m12 l2" style="background-color: ;">
+  <!--esto es margen de las columnas-->
   </div>
 </div>
-<!-- Aqui termina los planes -->   
-<!-- Aqui termina plan empresas --> 
-
-<!-- Aqui empieza la seccion de direccion --> 
-
-<div id="direccion" class="row" style="background-color: ">
-  <div class="section"> 
-  <div class="">
-    <ul class="">
-      <li>
-        <img src="imagenes/bannerdivideplanhogar.png" class="responsive-img" width="100%" height="100%"> <!-- random image -->
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
-        </div>
-      </li>
-  <!--     <li>
-        <img src="imagenes/conocenos2.jpg" class="responsive-img"> 
-        <div class="caption left-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Vision.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos3.jpg" class="responsive-img"> 
-        <div class="caption right-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Experiencia comprobada..</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos4.jpg" class="responsive-img"> 
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Soluciones adecuadas al cliente.</h5>
-        </div>
-      </li> -->
-    </ul>
-  </div>
+<!--Aqui termina los planes de hogar--> 
 </div>
+<!-- fin plan Empresa-->
+
+<!-- Inicio Direccion-->
+<div id="direccion" class="row" style="background-color: ;">  
+      <div class="">
+        <ul class="">
+            <li>
+            <img src="imagenes/bannerDivisor.jpg" class="responsive-img" width="100%" height="100%"> 
+            </li>  
+        </ul>
+      </div>
 <div class="col s12 m12 l12">
- <center><h3>DIRECCION</h3></center> 
+    <center><h3>DIRECCIÓN</h3></center> 
 </div>
-<div class="col s12 m12 l2">
-   <!--esto es margen de las columnas-->
-</div>
-
-<div class="col s12 m12 l5">
   
-<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.1878771754373!2d-77.01948334921822!3d-12.03058319143626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf50c47f7d57%3A0x6dce009c4754c896!2sTingo+Mar%C3%ADa%2C+Distrito+de+Lima+15404!5e0!3m2!1ses!2spe!4v1497728062658" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe> 
+<div class="row">
+  <div class="col s12 m12 l2" style="margin-top: ;background-color:;">
+    <!--Esto es margen de los planes--> 
+  </div>
 
-</div>
-
-<div class="col s12 m12 l3" style="margin-left: 0px;">
-  <strong>
-    <p><h5>•  Direccion:</h5>   Avenida Tantamayo Mz. "A", Lote 31 Urb. Monterrico - SMP</p>
-    <p><h5>•  Celulares:</h5>   998789659 / 955484040</p>
-    <p><h5>•  Telefono:</h5>    4922913</p>
-    <p><h5>•  Horario de atención:</h5>    Lunes a Sabado de 8:00 am a 5:00 pm</p>
+  <div class="col s12 m12 l5 z-depth-4" style="background-color: ;">
+  <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.1878771754373!2d-77.01948334921822!3d-12.03058319143626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf50c47f7d57%3A0x6dce009c4754c896!2sTingo+Mar%C3%ADa%2C+Distrito+de+Lima+15404!5e0!3m2!1ses!2spe!4v1497728062658" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe> 
+  </div>
+   <div class="col s12 m12 l3 z-depth-4" style="background-color:#062F4F; color: #fff">
+ <strong style="font-style: oblique;">
+    <p><h6>•  Direccion:</h6>   Avenida Tantamayo Mz. "A", Lote 31 Urb. Monterrico - SMP</p>
+    <p><h6>•  Celulares:</h6>   998789659 / 955484040</p>
+    <p><h6>•  Telefono:</h6>    4922913</p>
+    <p><h6>•  Horario de atención:</h6>    Lunes a Sabado de 8:00 am a 5:00 pm</p>
   </strong>
-
-</div>
-
-<div class="col s12 m12 l2">
-   <!--esto es margen de las columnas-->
-</div>
-</div>
-
-
-
-<!-- Aqui termina la seccion de direccion --> 
-
-
-
-<!-- Aqui va la seccion de cobertura -->   
-
-<!-- Aqui empeiza cobertura -->   
-<div id="cobertura" class="row" style="background-color:;margin:0;padding: 0; margin-bottom: 15px;padding-bottom: 20px;">
-  <div class="section"> 
-  <div class="">
-    <ul class="">
-      <li>
-        <img src="imagenes/coberturadivision.jpg" class="responsive-img" width="100%" height="100%"> <!-- random image -->
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
-        </div>
-      </li>
-  <!--     <li>
-        <img src="imagenes/conocenos2.jpg" class="responsive-img"> 
-        <div class="caption left-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Vision.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos3.jpg" class="responsive-img"> 
-        <div class="caption right-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Experiencia comprobada..</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/conocenos4.jpg" class="responsive-img"> 
-        <div class="caption center-align">
-          <h3></h3>
-          <h5 class="light grey-text text-lighten-3">Soluciones adecuadas al cliente.</h5>
-        </div>
-      </li> -->
-    </ul>
+  </div>
+    <div class="col s12 m12 l2" style="background-color: ;">
+  <!--esto es margen de las columnas-->
   </div>
 </div>
+</div>
+<!-- Fin Direccion-->
+
+<!-- Inicio Cobertura-->
+<div id="planHogar" class="row" style="background-color: ;">  
+      <div class="">
+        <ul class="">
+            <li>
+            <img src="imagenes/bannerDivisor.jpg" class="responsive-img" width="100%" height="100%"> 
+            </li>  
+        </ul>
+      </div>
 <div class="col s12 m12 l12">
- <center><h3>Cobertura</h3></center> 
+    <center><h3>COBERTURA</h3></center> 
 </div>
+  
+<div class="row">
 <div class="col s12 m12 l2">
   <!--esto es margen de las columnas-->
 </div>
-
-
-<div class="col s12 m12 l8" style="background-color:;padding-top: 4px;">
- 
+<div class="col s12 m12 l8 z-depth-4" style="background-color:;padding-top: 4px;">
    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.1878771754373!2d-77.01948334921822!3d-12.03058319143626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf50c47f7d57%3A0x6dce009c4754c896!2sTingo+Mar%C3%ADa%2C+Distrito+de+Lima+15404!5e0!3m2!1ses!2spe!4v1497728062658" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> 
-
-
-
 </div>
 <div class="col s12 m12 l2">
   <!--esto es margen de las columnas-->
 </div>
 </div>
-<!-- Aqui termina coberyra -->   
+</div>
+<!-- Fin Cobertura-->
 
-
-<!-- Aqui termina la seccion de cobertura -->  
-
-
-
-
-
-
-
-  </div>
-  <!--Pie de pagina-->
 <footer class="page-footer" style="padding-left: 30px">
           <div class="container">
             <div class="row">
@@ -714,16 +416,16 @@
               <div class="col l6 s12">
                 <h5 class="white-text">Siguenos en:</h5>
                  <ul>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#facebook">
+                  <li style="display: inline;"><a class="grey-text text-lighten-3 modal-trigger" href="#facebook">
                   <img class="activator  responsive-img" src="imagenes/facebook.png"></a></a>
                   </li>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#twitter">
+                  <li style="display: inline;"><a class="grey-text text-lighten-3 modal-trigger" href="#twitter">
                   <img class="activator  responsive-img" src="imagenes/twitter.png"></a>
                   </li>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#youtube">
+                  <li style="display: inline;"><a class="grey-text text-lighten-3 modal-trigger" href="#youtube">
                   <img class="activator  responsive-img" src="imagenes/youtube.png"></a>
                   </li>
-                  <li style="display: inline;"><a class="grey-text text-lighten-3" href="#whatsapp">
+                  <li style="display: inline;"><a class="grey-text text-lighten-3 modal-trigger" href="#whatsapp">
                   <img  class="activator  responsive-img" src="imagenes/wasap.png"></a>
                   </li> 
                 </ul>          
@@ -735,11 +437,11 @@
                   <li><a target="" class="page-scroll" href="#planHogar">Plan Hogar</a></li>
                   <li><a target="" class="page-scroll" href="#planEmpresa">Plan Empresas</a></li>
                   <li><a class="page-scroll" href="#direccion">¿Donde adquirirlos?</a></li>
-                  <li><a href="#modalPago">Pago de servicios</a></li>
+                  <li><a href="#modalPago" class="modal-trigger">Pago de servicios</a></li>
                   <li><a class="page-scroll" href="#cobertura">Cobertura</a></li>
                   <li onclick="myFunction()"><a class="">Soporte</a></li>
                   <li><a class="page-scroll" href="#direccion">Direccion</a></li>
-                  <li><a href="#modal1">Contáctenos</a></li>           
+                  <li><a class="modal-trigger" href="#modal1">Contáctenos</a></li>           
                 </ul>            
               </div>
 
@@ -755,8 +457,6 @@
 
           </div>      
 </footer>
-
-
 
 <!--Inicio Ventanas Modales-->
 <!-- Soporte -->
@@ -794,19 +494,16 @@
       </div>
 
 <div class="row">
-   
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix"><img src="iconos/ic_phone1x.png"></i>
           <input id="icon_prefix phone" type="text" class="validate">
           <label for="icon_prefix">Celular</label>
         </div>
-        
       </div>
-    
   </div>
 
-<div class="row">
+ <div class="row">
    
       <div class="row">
         <div class="input-field col s12">
@@ -818,7 +515,7 @@
       </div>
    
   </div>
-  <div class="row">
+    <div class="row">
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix"><img src="iconos/ic_mode_edit1x.png"></i>
@@ -826,16 +523,16 @@
           <label for="icon_prefix2">Mensaje:</label>
         </div>
       </div>
-  </div>
+    </div>
   <!-- <div class="modal-footer">
       <a href="#!" id="" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
   </div> -->
-  <center>
+    <center>
     
           <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
             Enviar
           </button>
-  </center>
+    </center>
     </form>
      </div>
   </div>
@@ -960,33 +657,21 @@
 
 <!--Fin Ventanas Modales-->
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
-  
-<script type="text/javascript" src="js/estilos.js"></script>
-<script type="text/javascript" src="js/scriptMapa.js"></script>
-<script type="text/javascript" src="js/particles.js"></script>
-<script type="text/javascript" src="js/particulas.js"></script>
+<script type="text/javascript" src="js/principal.js"></script>
 <script src="js/scrolling-nav.js"></script>
-<script type="text/javascript" src="js/correo.js"></script>
-<script type="text/javascript" src="js/soporte.js"></script>
-
-<script src="js/app.js"></script>
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-<script src="js/chat.js"></script>
-
-
 
 <script type="text/javascript">
-  
 $(document).ready(function(){
+
       $('.slider').slider();
       $(".button-collapse").sideNav();
       $('.modal').modal();
       $('.carousel.carousel-slider').carousel({fullWidth: true});
-     $('.slider').slider('indicators','false');
+      $('.slider').slider('indicators','false');
+
     });
 </script>
 
@@ -1005,9 +690,5 @@ function myFunction() {
   // $('.tap-target').tapTarget('close');
 }
 </script>
-
-
-
 </body>
-
 </html>
