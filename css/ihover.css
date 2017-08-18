@@ -2560,8 +2560,8 @@
   font-style: italic;
   font-size: 12px;
   color: #bbb;
-  padding: 5px;
-  text-align: center;
+  padding: 1px;
+  text-align: left;
 }
 .ih-item.square.effect1.top_to_bottom a:hover .img {
   -webkit-transform: translateY(30px) scale(0.6);
@@ -3502,12 +3502,13 @@
   margin: 30px 0 0 0;
 }
 .ih-item.square.effect10 .info p {
-  font-style: italic;
+  /*font-style: italic;*/
+  font:bold;
   font-size: 12px;
   position: relative;
   color: #bbb;
-  padding: 20px 20px 20px;
-  text-align: center;
+  padding: 5px 5px 5px;
+  text-align: left;
 }
 .ih-item.square.effect10 a:hover .info {
   visibility: visible;
