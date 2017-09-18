@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Olycarp</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="css/style.css">
 	  <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta charset="utf-8">
@@ -16,7 +20,7 @@
       <link rel="stylesheet" href="css/ihover.css" >
       <link rel="stylesheet" href="css/estiloMapa.css" >
 </head>
-<body id="page-top">
+<body id="page-top" style="overflow-x: hidden;">
   <!-- inicio de cabecera -->  
   <header class="navbar-fixed navMenu z-depth-4">
 	<nav class="nav-extended">
@@ -62,6 +66,14 @@
      	<a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas2.png" width="100%"></a>
  	</div>
 </div>
+
+<div  class="col s7 push-s5" id="particles-js"  style="position: absolute;  left: 10px; top: 30px; z-index: 1; width: 100%;height: 100%;"> 
+  <div style="color: #fff;position: absolute;z-index: 2;margin-top: 3%;margin-left: 15%;">
+   
+  </div>
+</div> 
+
+
   <!-- fin de particulas-->
 
 
@@ -174,7 +186,7 @@
 <div class="col s12 m12 l12">
     <center><h5>ELIGE EL PLAN QUE MAS TE CONVENGA</h5></center> 
 </div>
-  <div class="col s12 m12 l3" style="margin-top: ;background-color: ; height: 200px;">
+  <div class="col s12 m12 l3" style="margin-top: ;background-color: ; height:;">
     <!--Esto es margen de los planes--> 
   </div>
   <div class="col s12 m12 l2 xl2 " style="margin-top: 5px; background-color: ;padding:;">
@@ -196,7 +208,7 @@
       <center><a  class="btn waves-effect azul white-text darken-text-2  pulse modal-trigger" href="#modal1">Adquierelo!!</a></center>
     </div>
   </div>
-     <div class="col s12 m12 l2" style="background-color: ;height: 200px;">
+     <div class="col s12 m12 l2" style="background-color: ;height:;">
   <!--esto es margen de las columnas-->
   </div>
   <div class="col s12 m12 l2 xl2" style="margin-top: 5px; background-color: ;padding:;">
@@ -223,14 +235,14 @@
   </div>
 
 
-  <div class="col s12 m12 l3" style="background-color: ;height: 200px;">
+  <div class="col s12 m12 l3" style="background-color: ;height: ;">
   <!--esto es margen de las columnas-->
   </div>
 </div>
 
 
 <div class="row">
-  <div class="col s12 m12 l3" style="margin-top: ;background-color: ; height: 200px;">
+  <div class="col s12 m12 l3" style="margin-top: ;background-color: ; height:;">
     <!--Esto es margen de los planes--> 
   </div>
   <div class="col s12 m12 l2 xl2" style="margin-top: 5px; background-color: ;height: ;padding:;">
@@ -254,7 +266,7 @@
     </div>
     
   </div>
-   <div class="col s12 m12 l2" style="background-color: ;height: 200px;">
+   <div class="col s12 m12 l2" style="background-color: ;height: ;">
   <!--esto es margen de las columnas-->
   </div>
       <div class="col s12 m12 l2 xl2" style="margin-top: 5px;background-color: ;padding:">
@@ -281,7 +293,7 @@
   </div>
 
 
-  <div class="col s12 m12 l3" style="background-color: ;height: 200px;">
+  <div class="col s12 m12 l3" style="background-color: ;height:;">
   <!--esto es margen de las columnas-->
   </div>
 </div>
@@ -687,7 +699,11 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript" src="js/principal.js"></script>
-<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript" src="js/scrolling-nav.js"></script>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -715,6 +731,25 @@ function myFunction() {
     $('.tap-target').tapTarget('open');
   // $('.tap-target').tapTarget('close');
 }
+</script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
 </script>
 </body>
 </html>
