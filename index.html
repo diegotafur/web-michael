@@ -20,7 +20,7 @@
       <link rel="stylesheet" href="css/ihover.css" >
       <link rel="stylesheet" href="css/estiloMapa.css" >
 </head>
-<body id="page-top" style="overflow-x: hidden;">
+<body id="page-top" style="overflow-x: hidden; background-color: /*#D3D3D3*/;">
   <!-- inicio de cabecera -->  
   <header class="navbar-fixed navMenu z-depth-4">
 	<nav class="nav-extended">
@@ -64,6 +64,7 @@
 	<div class="carousel carousel-slider">
     	<a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas1.png" width="100%"></a>
      	<a class="carousel-item" href="#one!"><img src="imagenes/bannerParticulas2.png" width="100%"></a>
+        <a class="carousel-item" href="#one!"><img src="imagenes/prueba.jpg" width="100%"></a>
  	</div>
 </div>
 
@@ -481,14 +482,14 @@
               <div class="col l4 offset-l2 s12">
                <!--  <h5 class="white-text">Links</h5> -->
                 <ul>
-                  <li><a target="" class="page-scroll" href="#planHogar">Plan Hogar</a></li>
-                  <li><a target="" class="page-scroll" href="#planEmpresa">Plan Empresas</a></li>
-                  <li><a class="page-scroll" href="#direccion">¿Donde adquirirlos?</a></li>
-                  <li><a href="#modalPago" class="modal-trigger">Pago de servicios</a></li>
+                  <li><a target="" class="page-scroll" href="#planHogar" style="color: #fff">Plan Hogar</a></li>
+                  <li><a target="" class="page-scroll" href="#planEmpresa" style="color: #fff">Plan Empresas</a></li>
+                  <li><a class="page-scroll" href="#direccion" style="color: #fff">¿Donde adquirirlos?</a></li>
+                  <li><a href="#modalPago" class="modal-trigger" style="color: #fff">Pago de servicios</a></li>
          <!--          <li><a class="page-scroll" href="#cobertura">Cobertura</a></li> -->
-                  <li onclick="myFunction()"><a class="">Soporte</a></li>
-                  <li><a class="page-scroll" href="#direccion">Direccion</a></li>
-                  <li><a class="modal-trigger" href="#modal1">Contáctenos</a></li>           
+                  <li onclick="myFunction()"><a class="" style="color: #fff">Soporte</a></li>
+                  <li><a class="page-scroll" href="#direccion" style="color: #fff">Direccion</a></li>
+                  <li><a class="modal-trigger" href="#modal1" style="color: #fff">Contáctenos</a></li>           
                 </ul>            
               </div>
 
@@ -700,9 +701,9 @@
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript" src="js/principal.js"></script>
 <script type="text/javascript" src="js/scrolling-nav.js"></script>
-
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/lib/stats.js"></script>
 
 
 <script type="text/javascript">
@@ -732,24 +733,6 @@ function myFunction() {
   // $('.tap-target').tapTarget('close');
 }
 </script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
+
 </body>
 </html>
